@@ -26,13 +26,15 @@
 
 [source,text]
 ----
-COUNT | 1e&a 2e&a 3e&a 4e&a
-KICK  | X--- ---- X--- --x-
-CLAP  | ---- X--- ---- X---
-CHH   | x-x- x-x- x-x- x-x-
-OHH   | ---- --o- ---- --o-
-TOM   | ---x ---- -x-- x---
+include::partial$pattern-grid-header.adoc[]
+KICK    | X  .  .  . | .  .  .  . | X  .  .  . | .  .  x  .
+CLAP    | .  .  .  . | X  .  .  . | .  .  .  . | X  .  .  .
+HI-HAT  | x  .  x  . | x  .  x  . | x  .  x  . | x  .  x  .
+OPEN HH | .  .  .  . | .  .  o  . | .  .  .  . | .  .  o  .
+TOM     | .  .  .  x | .  .  .  . | .  x  .  . | x  .  .  .
 ----
+
+include::partial$pattern-grid-legend.adoc[]
 
 == Character
 

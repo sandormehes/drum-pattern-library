@@ -26,12 +26,14 @@
 
 [source,text]
 ----
-COUNT | 1e&a 2e&a 3e&a 4e&a
-KICK  | X--- ---x --x- ----
-SNARE | ---- X--- ---- X---
-CHH   | --x- --x- --x- --x-
-PERC  | ---x ---- -x-- ----
+include::partial$pattern-grid-header.adoc[]
+KICK    | X  .  .  . | .  .  .  x | .  .  x  . | .  .  .  .
+SNARE   | .  .  .  . | X  .  .  . | .  .  .  . | X  .  .  .
+HI-HAT  | .  .  x  . | .  .  x  . | .  .  x  . | .  .  x  .
+PERC    | .  .  .  x | .  .  .  . | .  x  .  . | .  .  .  .
 ----
+
+include::partial$pattern-grid-legend.adoc[]
 
 == Character
 
