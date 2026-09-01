@@ -1,0 +1,10 @@
+[NOTE]
+====
+*Legend:*
+
+ * `X`: accent 
+ * `x`: normal hit
+ * `g`: ghost hit
+ * `o`: open or sustained hit
+ * `.`: rest
+====
