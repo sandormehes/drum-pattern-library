@@ -1,6 +1,6 @@
 = Notation
 
-Patterns use a fixed-width 16-step grid for one bar of 4/4 unless the page says otherwise. Spaces divide beats, so edits remain readable in source and in Git diffs.
+Patterns use a fixed-width 16-step grid for one bar of 4/4 unless the page says otherwise. Numbered steps remove the need to understand spoken sixteenth-note counting. Vertical separators divide beats, while each instrument remains on one source line for readable Git diffs.
 
 == Step symbols
 
@@ -31,15 +31,14 @@ Patterns use a fixed-width 16-step grid for one bar of 4/4 unless the page says 
 
 == Grid
 
-[source,text]
+[drum-pattern]
 ----
-COUNT | 1e&a 2e&a 3e&a 4e&a
-KICK  | X--- ---- --x- ----
-SNARE | ---- X--- ---- X---
-CHH   | --x- --x- --x- --x-
+KICK   | X--- ---x --X- ----
+SNARE  | ---- X--- ---- X---
+HI-HAT | x-x- x-x- x-x- x-x-
 ----
 
-The characters after the track separator are the canonical pattern data. Use uppercase track labels, exactly four characters per beat, and one space between beats.
+The symbols after the track label are the canonical pattern data. Use readable uppercase track labels, exactly four characters per beat, and one space between beats. The custom `drum-pattern` block converts this compact source into the visual grid and legend automatically.
 
 == Timing and dynamics
 

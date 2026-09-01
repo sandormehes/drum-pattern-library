@@ -9,10 +9,12 @@ You need Node.js 20 or newer. Antora reads local content through Git, so run the
 [source,shell]
 ----
 npm install
-npm run build
+npm run check
 ----
 
 Open `build/site/index.html` in a browser.
+
+The check command validates every pattern's step count and symbols before building the site.
 
 == Add a pattern
 

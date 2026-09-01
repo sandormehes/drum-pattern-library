@@ -5,7 +5,9 @@
   "description": "A Git-friendly drum-pattern library published with Antora",
   "scripts": {
     "build": "antora antora-playbook.yml",
-    "build:clean": "antora --clean antora-playbook.yml"
+    "build:clean": "antora --clean antora-playbook.yml",
+    "check:patterns": "node scripts/validate-patterns.mjs",
+    "check": "npm run check:patterns && npm run build:clean"
   },
   "devDependencies": {
     "@antora/cli": "3.2.0",

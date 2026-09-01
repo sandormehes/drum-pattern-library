@@ -26,16 +26,13 @@
 
 == Pattern
 
-[source,text]
+[drum-pattern]
 ----
-include::partial$pattern-grid-header.adoc[]
-KICK    | X  .  .  . | .  .  .  . | .  .  x  . | .  .  .  x
-SNARE   | .  .  .  . | X  .  .  . | .  .  .  . | .  .  .  .
-HI-HAT  | .  .  x  . | .  .  x  . | .  .  x  . | .  .  x  .
-PERC    | x  .  .  . | .  .  .  g | .  .  .  . | x  .  .  .
+KICK   | X--- ---- --x- ---x
+SNARE  | ---- X--- ---- ----
+HI-HAT | --x- --x- --x- --x-
+PERC   | x--- ---g ---- x---
 ----
-
-include::partial$pattern-grid-legend.adoc[]
 
 == Character
 
