@@ -1,0 +1,12 @@
+= Research
+
+This module holds historical context, listening notes, rhythmic analysis, and other material that supports the pattern library without obscuring the playable pages.
+
+== Research principles
+
+* Separate sourced facts from musical interpretation.
+* Prefer primary sources and clearly identified recordings where possible.
+* Record enough detail for another contributor to locate and assess a source.
+* Link research pages to patterns using Antora cross-references.
+
+Start with the xref:sources.adoc[source register].

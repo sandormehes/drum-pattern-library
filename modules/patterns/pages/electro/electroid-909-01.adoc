@@ -1,0 +1,62 @@
+= Electroid 909 01
+:pattern-id: EL-130-001
+:family: Electro
+:region: Experimental electronics
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 1
+:tempo: 128–132 BPM
+:source-type: Original
+:confidence: High
+:tags: electro, electroid, 909, 130-bpm, toms, machine-funk
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bar
+|Tags |{tags}
+|===
+
+== Pattern
+
+[source,text]
+----
+COUNT | 1e&a 2e&a 3e&a 4e&a
+KICK  | X--- ---- X--- --x-
+CLAP  | ---- X--- ---- X---
+CHH   | x-x- x-x- x-x- x-x-
+OHH   | ---- --o- ---- --o-
+TOM   | ---x ---- -x-- x---
+----
+
+== Character
+
+A crisp electroid pattern designed around 909-style articulations. Its regular hats and backbeat feel mechanical, while the late kick and low-tom cell keep the loop from settling into a straight house pattern.
+
+== Rhythmic roles
+
+Foundation:: Kick and clap define a firm machine grid.
+Lift:: Open hats brighten the offbeats.
+Disruption:: The tom lane crosses the kick pattern and creates the loop's funk.
+
+== Performance notes
+
+* Start with little or no swing; introduce timing variation only after the accents work.
+* Tune the tom to interact with the bass rather than treating it as decoration.
+* Shorten the second open hat if it masks the final kick.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original library study combining the project's experimental 130 BPM and 909-percussion directions.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:grime/grime-130-03.adoc[Grime 130 03]
+* xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica–UK Mutation 01]

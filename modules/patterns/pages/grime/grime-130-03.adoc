@@ -1,0 +1,61 @@
+= Grime 130 03
+:pattern-id: GR-130-003
+:family: Grime
+:region: United Kingdom
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 1
+:tempo: 130 BPM
+:source-type: Original
+:confidence: High
+:tags: grime, 130-bpm, half-time, ghost-notes, sparse
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bar
+|Tags |{tags}
+|===
+
+== Pattern
+
+[source,text]
+----
+COUNT | 1e&a 2e&a 3e&a 4e&a
+KICK  | X--- ---x --X- ----
+SNARE | ---- X--- ---- X---
+CHH   | x-x- x-x- x-x- x-x-
+PERC  | --g- -x-- ---g x---
+----
+
+== Character
+
+A half-time grime framework at 130 BPM. The firm kick accents and backbeat provide a stable outline while the percussion lane creates a quieter, asymmetrical counter-rhythm.
+
+== Rhythmic roles
+
+Foundation:: Kick and snare establish the large-scale pulse.
+Subdivision:: Closed hats make the eighth-note grid audible.
+Syncopation:: Normal and ghost percussion hits pull against the foundation without adding another strong accent.
+
+== Performance notes
+
+* Keep the ghost percussion clearly below the normal hits.
+* Let the final percussion hit lead back into beat one.
+* Try a metallic or short FM sound on the percussion lane without changing its rhythmic role.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Developed from the `HH / SD / KK / PC` notation example discussed during the library design.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:jamaica/sparse-dancehall-01.adoc[Sparse Dancehall 01]
+* xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica–UK Mutation 01]

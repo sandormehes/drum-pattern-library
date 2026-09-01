@@ -1,0 +1,28 @@
+= Drum Pattern Library
+
+A human-readable, Git-friendly drum-pattern library built with AsciiDoc and Antora.
+
+== Preview locally
+
+You need Node.js 20 or newer. Antora reads local content through Git, so run these commands from a Git clone (or after initializing and making the first commit in a downloaded archive).
+
+[source,shell]
+----
+npm install
+npm run build
+----
+
+Open `build/site/index.html` in a browser.
+
+== Add a pattern
+
+. Copy one of the pages in `modules/patterns/pages/`.
+. Give it a stable ID and filename.
+. Keep every track on its own line so changes remain clear in Git diffs.
+. Add the new page to `modules/patterns/nav.adoc`.
+
+The complete notation and authoring rules are in the generated site under _Notation_ and _Methodology_.
+
+== Publish on GitHub Pages
+
+Push the repository to GitHub and, under *Settings > Pages*, choose *GitHub Actions* as the source. Every push to `main` then builds and publishes the site. Pull requests run the same build without publishing.

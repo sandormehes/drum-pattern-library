@@ -1,0 +1,67 @@
+= Jamaica–UK Mutation 01
+:pattern-id: HY-130-001
+:family: Jamaica–UK hybrid
+:region: Experimental
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 1
+:tempo: 128–132 BPM
+:source-type: Adaptation
+:confidence: High
+:parent-pattern: DH-2001-001
+:tags: hybrid, dancehall-derived, grime, mutation, negative-space
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bar
+|Parent |{parent-pattern}
+|Tags |{tags}
+|===
+
+== Pattern
+
+[source,text]
+----
+COUNT | 1e&a 2e&a 3e&a 4e&a
+KICK  | X--- ---- --x- ---x
+SNARE | ---- X--- ---- ----
+CHH   | --x- --x- --x- --x-
+PERC  | x--- ---g ---- x---
+----
+
+== Character
+
+A controlled mutation of xref:jamaica/sparse-dancehall-01.adoc[Sparse Dancehall 01]. Removing the second backbeat creates a large pocket of negative space, while the rotated percussion lane and pickup kick push the loop toward a UK half-time feel.
+
+== Transformations
+
+Parent:: {parent-pattern}
+Backbeat:: Remove the snare on beat four.
+Kick:: Remove the late beat-two kick and add a sixteenth-note pickup before the loop repeats.
+Percussion:: Rotate and simplify the syncopation; turn the second event into a ghost hit.
+Tempo:: Raise the working range from roughly 100 BPM to roughly 130 BPM.
+
+== Performance notes
+
+* Resist filling the missing second backbeat; the absence is the main mutation.
+* Keep the pickup kick lighter than beat one.
+* Compare Jamaican digital percussion and metallic UK electronic timbres using the same event pattern.
+
+== Provenance
+
+Type:: {source-type}
+Derived from:: xref:jamaica/sparse-dancehall-01.adoc[{parent-pattern}]
+Transformation record:: Documented above.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:jamaica/sparse-dancehall-01.adoc[Sparse Dancehall 01]
+* xref:grime/grime-130-03.adoc[Grime 130 03]
+* xref:electro/electroid-909-01.adoc[Electroid 909 01]

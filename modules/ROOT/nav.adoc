@@ -1,0 +1,3 @@
+* xref:index.adoc[Home]
+* xref:notation.adoc[Notation]
+* xref:methodology.adoc[Methodology]

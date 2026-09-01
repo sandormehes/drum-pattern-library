@@ -1,0 +1,18 @@
+= Drum Pattern Library
+:description: A readable, version-controlled collection of drum patterns.
+
+This library collects drum patterns as plain-text AsciiDoc pages. Each entry combines a compact step grid with musical context, performance notes, and provenance.
+
+== Browse the library
+
+* xref:patterns:index.adoc[Pattern library] — playable patterns organized by family.
+* xref:notation.adoc[Notation] — symbols, grid rules, and an example.
+* xref:methodology.adoc[Methodology] — how patterns are researched, documented, and reviewed.
+* xref:research:index.adoc[Research] — sources and broader rhythmic context.
+
+== Design principles
+
+Readable:: A pattern should make sense in a text editor and on the published site.
+Diff-friendly:: One track occupies one line; musical changes are easy to review in Git.
+Portable:: The source does not depend on a DAW, plug-in, sample pack, or proprietary format.
+Traceable:: Provenance and confidence are recorded separately from interpretation.

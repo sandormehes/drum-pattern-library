@@ -1,0 +1,56 @@
+= Sparse Dancehall 01
+:pattern-id: DH-2001-001
+:family: Dancehall
+:region: Jamaica
+:era: 1998–2005
+:meter: 4/4
+:subdivision: 1/16
+:bars: 1
+:tempo: 96–104 BPM
+:source-type: Original
+:confidence: High
+:tags: dancehall, digital, sparse, syncopated
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bar
+|Tags |{tags}
+|===
+
+== Pattern
+
+[source,text]
+----
+COUNT | 1e&a 2e&a 3e&a 4e&a
+KICK  | X--- ---x --x- ----
+SNARE | ---- X--- ---- X---
+CHH   | --x- --x- --x- --x-
+PERC  | ---x ---- -x-- ----
+----
+
+== Character
+
+A sparse digital dancehall skeleton in which the percussion and late kick placement supply forward motion.
+
+== Performance notes
+
+* Keep the kick short and dry.
+* Let the backbeat sit slightly behind the grid.
+* Give the percussion more velocity variation than the closed hat.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Created as a notation example for this library.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:jamaica/steppers-dub-01.adoc[Steppers Dub 01]
+* xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica–UK Mutation 01]
+* xref:grime/grime-130-03.adoc[Grime 130 03]

@@ -1,0 +1,15 @@
+= Sources
+
+Add books, articles, interviews, recordings, and other references here as the library grows.
+
+[cols="2,2,2,3", options="header"]
+|===
+|Creator |Title |Date |Notes
+
+|—
+|—
+|—
+|No external sources have been registered yet.
+|===
+
+For a recording, include the artist, track title, release, label, year, and the passage used. For a web source, include the author, page title, publisher, publication date when available, URL, and access date.

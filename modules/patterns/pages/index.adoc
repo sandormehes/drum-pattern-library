@@ -1,0 +1,22 @@
+= Pattern Library
+
+Patterns are grouped by musical family and region for browsing, while stable IDs keep links and filenames predictable.
+
+== Jamaica
+
+* xref:jamaica/sparse-dancehall-01.adoc[Sparse Dancehall 01] — sparse, syncopated digital dancehall skeleton.
+* xref:jamaica/steppers-dub-01.adoc[Steppers Dub 01] — four-on-the-floor dub foundation with offbeat hats.
+
+== Grime
+
+* xref:grime/grime-130-03.adoc[Grime 130 03] — half-time 130 BPM framework with ghosted syncopation.
+
+== Electro
+
+* xref:electro/electroid-909-01.adoc[Electroid 909 01] — a rigid 909-oriented pulse interrupted by tom movement.
+
+== Hybrids
+
+* xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica–UK Mutation 01] — a documented mutation of the sparse dancehall starter.
+
+See xref:ROOT:notation.adoc[Notation] before contributing a pattern.

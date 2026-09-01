@@ -1,0 +1,9 @@
+name: drum-patterns
+title: Drum Pattern Library
+version: main
+display_version: Main
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc
+  - modules/patterns/nav.adoc
+  - modules/research/nav.adoc

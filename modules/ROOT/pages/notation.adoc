@@ -1,0 +1,48 @@
+= Notation
+
+Patterns use a fixed-width 16-step grid for one bar of 4/4 unless the page says otherwise. Spaces divide beats, so edits remain readable in source and in Git diffs.
+
+== Step symbols
+
+[cols="1,2,5", options="header"]
+|===
+|Symbol |Meaning |Use
+
+|`-`
+|Rest
+|No hit on this step.
+
+|`x`
+|Normal hit
+|The default articulation.
+
+|`X`
+|Accent
+|A deliberately stronger hit.
+
+|`g`
+|Ghost hit
+|A quiet supporting hit.
+
+|`o`
+|Open or sustained hit
+|Commonly used for an open hi-hat or ringing percussion.
+|===
+
+== Grid
+
+[source,text]
+----
+COUNT | 1e&a 2e&a 3e&a 4e&a
+KICK  | X--- ---- --x- ----
+SNARE | ---- X--- ---- X---
+CHH   | --x- --x- --x- --x-
+----
+
+The characters after the track separator are the canonical pattern data. Use uppercase track labels, exactly four characters per beat, and one space between beats.
+
+== Timing and dynamics
+
+The grid describes the rhythmic skeleton, not every performance detail. Record swing, microtiming, velocity, and articulation in a pattern's metadata or performance notes. This keeps the step data simple while preserving the character of the groove.
+
+For meters or subdivisions that do not fit a 16-step grid, state the meter and subdivision explicitly and retain the same rule: one character per step, grouped by beat.
