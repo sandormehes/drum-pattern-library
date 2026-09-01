@@ -14,7 +14,7 @@
   font-family: "Roboto Mono", monospace;
   font-size: 0.9rem;
   margin: 0;
-  min-width: 30rem;
+  min-width: 26rem;
   table-layout: fixed;
   width: 100%;
 }
@@ -41,6 +41,10 @@
   border-bottom: 1px solid #d5dae2;
 }
 
+.drum-pattern thead th[rowspan] {
+  width: 5.75rem;
+}
+
 .drum-pattern tbody th {
   background: #fafbfc;
   border-right: 1px solid #d5dae2;
@@ -59,7 +63,7 @@
 }
 
 .drum-pattern .step {
-  width: 1.45rem;
+  width: 1.25rem;
 }
 
 .drum-pattern .beat-start {
