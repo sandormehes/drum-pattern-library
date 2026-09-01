@@ -17,6 +17,8 @@ Patterns are grouped by musical family and region for browsing, while stable IDs
 
 == Hybrids
 
-* xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica–UK Mutation 01] — a documented mutation of the sparse dancehall starter.
+* xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica-UK Mutation 01] — a documented mutation of the sparse dancehall starter.
+
+* xref:hybrids/grime-batida-mutation-01.adoc[Grime-Batida Mutation 01] — 140 BPM half-time grime framework animated by interlocking batida-informed percussion.
 
 See xref:ROOT:notation.adoc[Notation] before contributing a pattern.

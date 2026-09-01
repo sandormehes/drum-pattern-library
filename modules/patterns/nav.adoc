@@ -7,4 +7,5 @@
 ** Electro
 *** xref:electro/electroid-909-01.adoc[Electroid 909 01]
 ** Hybrids
-*** xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica–UK Mutation 01]
+*** xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica-UK Mutation 01]
+*** xref:hybrids/grime-batida-mutation-01.adoc[Grime-Batida Mutation 01]

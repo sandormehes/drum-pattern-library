@@ -1,0 +1,71 @@
+= Grime-Batida Mutation 01
+:pattern-id: HY-140-002
+:family: Grime-Batida hybrid
+:region: United Kingdom / Lisbon-Luanda diasporic continuum
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 1
+:tempo: 140 BPM
+:source-type: Original
+:confidence: High
+:tags: grime, batida, principe, half-time, syncopation, percussion, 140-bpm
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bar
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- --x- ---- x--x
+SNARE  | ---- X--- ---- X---
+HI-HAT | x-xx x-xx x-xx xxox
+PERC   | --xg x--- -xg- x--g
+----
+
+== Character
+
+A 140 BPM half-time grime foundation activated by clipped, interlocking percussion.
+The kick and snare retain a firm UK framework, while the percussion lane suggests
+a batida-informed cycle that keeps moving through the gaps rather than filling them.
+
+== Rhythmic roles
+
+Foundation:: The accented first kick and fixed half-time snare establish the grime backbone.
+Subdivision:: Dense closed hats give motion without turning into a straight trap roll.
+Syncopation:: Percussion alternates normal and ghost hits, creating a separate dancing layer.
+Release:: The late kick pair and open hat create momentum into the loop point.
+
+== Groove setting
+
+Swing:: Apply approximately 55% swing to the hi-hat and percussion lanes only.
+Snare timing:: Keep both snares essentially quantized and forceful.
+Microtiming:: Nudge selected ghost percussion slightly late; allow one normal percussion hit per cycle to arrive slightly early.
+Dynamics:: Keep ghost hits markedly quieter than the normal percussion. The open hat is a release, not an accent.
+
+== Performance notes
+
+* Use dry, synthetic drums: a compact kick, clipped snare, and metallic or woody percussion.
+* Do not add extra snares to fill the space—the half-time weight is essential.
+* Let the percussion change timbre or pitch between repetitions while preserving the event pattern.
+* A bass phrase should answer the late kicks rather than double every kick.
+
+== Provenance
+
+Type:: {source-type}
+Source:: An original pattern informed by grime's half-time framework and batida/Príncipe-style interlocking percussion; not a transcription of a particular work.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:grime/grime-130-03.adoc[Grime 130 03]
+* xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica-UK Mutation 01]
