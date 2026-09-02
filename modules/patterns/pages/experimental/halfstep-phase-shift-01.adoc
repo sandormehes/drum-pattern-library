@@ -1,0 +1,63 @@
+= Half-Step Phase Shift 01
+:pattern-id: EX-140-003
+:family: Experimental half-step
+:region: Experimental
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 138–142 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-magnetic-man, src-plastician
+:tags: experimental, half-step, phase-shift, two-bar, backbeat
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- ---x ---- | X--- --x- ---- ---x
+SNARE  | ---- ---- X--- ---- | ---- ---X ---- ----
+HI-HAT | --x- --x- --x- --x- | --x- --x- --x- --x-
+PERC   | ---- -g-- ---- x--- | ---- x--- -g-- ----
+----
+
+== Character
+
+Bar one states a familiar half-step snare on beat three. In bar two the accent arrives one sixteenth earlier, briefly destabilizing the frame before the loop resets.
+
+== Design device
+
+Expectation:: The first bar teaches the listener where the backbeat belongs.
+Displacement:: The second backbeat moves from step 9 to step 8 within its bar.
+Reset:: The opening kick restores the original phase every two bars.
+
+== Performance notes
+
+* Make the displaced snare unmistakably strong.
+* Keep the hats steady so the shift reads as displacement, not loose timing.
+* Leave a short silence immediately after the early snare.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original transformation of a generic half-step framework; no track was transcribed.
+References:: xref:research:sources.adoc#src-magnetic-man[Magnetic Man] and xref:research:sources.adoc#src-plastician[Plastician] provide scene context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:dubstep/dubstep-halfstep-01.adoc[Dubstep Half-Step 01]
+* xref:grime/grime-130-03.adoc[Grime 130 03]
+

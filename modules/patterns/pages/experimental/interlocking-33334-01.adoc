@@ -1,0 +1,62 @@
+= Interlocking 3+3+3+3+4
+:pattern-id: EX-130-006
+:family: Experimental machine funk
+:region: Experimental
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 1
+:tempo: 126–134 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-principe, src-kode9
+:tags: experimental, 3-3-3-3-4, interlocking, cross-rhythm, machine-funk
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bar
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--x --x- -x-- x---
+SNARE  | ---- X--- ---- X---
+HI-HAT | --x- -x-- x--x --x-
+PERC   | -x-- x--x --x- -x-x
+----
+
+== Character
+
+Kick accents divide the 16-step bar into 3+3+3+3+4 while snare continues to mark beats two and four. Hats and percussion fill opposing parts of the cycle, producing one dense interlocking surface.
+
+== Design device
+
+Grouping:: Kick attacks begin groups of 3, 3, 3, 3, and 4 steps.
+Contradiction:: The snare preserves 4/4 landmarks against the asymmetric grouping.
+Interlock:: Hat and percussion placements are distributed to avoid simple unison.
+
+== Performance notes
+
+* Accent the first kick and slightly soften the remaining grouping markers.
+* Assign contrasting pitches to percussion events instead of adding more hits.
+* Mute the snare temporarily to hear the asymmetric grouping on its own.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original grid study. The arithmetic grouping is documented above and is not attributed to a particular regional tradition.
+References:: The xref:research:sources.adoc#src-principe[Príncipe Discos catalogue] and xref:research:sources.adoc#src-kode9[Kode9] provide broad experimental listening context only.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:experimental/five-step-rotation-01.adoc[Five-Step Rotation 01]
+* xref:hybrids/grime-batida-mutation-01.adoc[Grime-Batida Mutation 01]

@@ -1,0 +1,63 @@
+= Negative-Space Relay 01
+:pattern-id: EX-138-001
+:family: Experimental bass
+:region: Experimental
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 136–140 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-veal, src-kode9
+:tags: experimental, negative-space, relay, two-bar, sparse
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- --x- ---- | ---- ---x ---- x---
+SNARE  | ---- X--- ---- ---- | ---- ---- X--- ----
+HI-HAT | --x- ---- --x- ---- | --x- ---- --x- ----
+PERC   | ---- --x- ---- x--- | x--- ---- ---g ----
+----
+
+== Character
+
+No lane carries the groove alone. Events pass from kick to percussion to snare across two bars, creating continuity through handoff rather than density.
+
+== Design device
+
+Relay:: A new timbre answers the previous event instead of doubling it.
+Asymmetry:: The only strong snares occur in different halves of the two bars.
+Silence:: Empty quarter-note regions are structural and should remain exposed.
+
+== Performance notes
+
+* Give the final ghost percussion enough presence to point back toward beat one.
+* Use related envelopes across the lanes so the handoffs feel intentional.
+* Add ambience only if its decay does not erase the gaps.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original library study; no recording was transcribed.
+References:: xref:research:sources.adoc#src-veal[Veal] informs the use of dub space and xref:research:sources.adoc#src-kode9[Kode9] provides hybrid electronic context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:dubstep/dubstep-halfstep-01.adoc[Dubstep Half-Step 01]
+* xref:experimental/digital-dub-dropout-01.adoc[Digital-Dub Dropout 01]
+

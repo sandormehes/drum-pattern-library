@@ -30,6 +30,15 @@ Patterns are grouped by musical family and region for browsing, while stable IDs
 
 * xref:electro/electroid-909-01.adoc[Electroid 909 01] — a rigid 909-oriented pulse interrupted by tom movement.
 
+== Experimental
+
+* xref:experimental/negative-space-relay-01.adoc[Negative-Space Relay 01] — a sparse two-bar groove built from timbral handoffs.
+* xref:experimental/five-step-rotation-01.adoc[Five-Step Rotation 01] — a five-sixteenth kick cycle moving across fixed 4/4.
+* xref:experimental/halfstep-phase-shift-01.adoc[Half-Step Phase Shift 01] — a half-step backbeat displaced one sixteenth in bar two.
+* xref:experimental/digital-dub-dropout-01.adoc[Digital-Dub Dropout 01] — a steppers mutation whose second bar is created by subtraction.
+* xref:experimental/breakbeat-mirror-01.adoc[Breakbeat Mirror 01] — a breakbeat whose second bar reverses the first.
+* xref:experimental/interlocking-33334-01.adoc[Interlocking 3+3+3+3+4] — asymmetric accent grouping held against a 4/4 backbeat.
+
 == Hybrids
 
 * xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica-UK Mutation 01] — a documented mutation of the sparse dancehall starter.

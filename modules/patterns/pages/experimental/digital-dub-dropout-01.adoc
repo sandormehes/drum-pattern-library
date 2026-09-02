@@ -1,0 +1,66 @@
+= Digital-Dub Dropout 01
+:pattern-id: EX-102-004
+:family: Experimental digital dub
+:region: Experimental
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 98–106 BPM
+:source-type: Adaptation
+:confidence: High
+:source-refs: src-veal, src-katz, src-sleng-teng
+:parent-pattern: DB-1978-001
+:tags: experimental, dub, steppers, dropout, two-bar, mutation
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Parent |{parent-pattern}
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK    | X--- X--- X--- X--- | X--- ---- X--- ----
+SNARE   | ---- X--- ---- X--- | ---- X--- ---- ----
+HI-HAT  | --x- --x- --x- --x- | --x- ---- --x- ----
+OPEN HH | ---- --o- ---- --o- | ---- ---- ---- ---o
+----
+
+== Character
+
+The first bar presents a full steppers foundation. The second removes alternate kicks, the final snare, and half the hats, treating subtraction as the variation rather than adding a fill.
+
+== Transformations
+
+Parent:: {parent-pattern}
+Extension:: Expand the one-bar parent into a two-bar statement and response.
+Dropout:: Remove selected foundation events in bar two.
+Release:: Delay the final open hat until the last sixteenth of the cycle.
+
+== Performance notes
+
+* Change ambience or filter state when the sparse second bar arrives.
+* Preserve the missing final snare; it creates the return to bar one.
+* Keep the delayed open hat quieter than a conventional fill.
+
+== Provenance
+
+Type:: {source-type}
+Derived from:: xref:jamaica/steppers-dub-01.adoc[{parent-pattern}]
+References:: xref:research:sources.adoc#src-veal[Veal], xref:research:sources.adoc#src-katz[Katz], and xref:research:sources.adoc#src-sleng-teng[Wayne Smith] provide dub and digital context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:jamaica/steppers-dub-01.adoc[Steppers Dub 01]
+* xref:experimental/negative-space-relay-01.adoc[Negative-Space Relay 01]
+

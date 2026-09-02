@@ -1,0 +1,63 @@
+= Five-Step Rotation 01
+:pattern-id: EX-132-002
+:family: Experimental machine funk
+:region: Experimental
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 128–136 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-kode9, src-principe
+:tags: experimental, five-step-cycle, rotation, two-bar, machine-funk
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- -x-- --x- ---x | ---- x--- -x-- --x-
+SNARE  | ---- X--- ---- X--- | ---- X--- ---- X---
+HI-HAT | x-x- x-x- x-x- x-x- | x-x- x-x- x-x- x-x-
+PERC   | --x- ---g x--- -x-- | --g- x--- ---x -g--
+----
+
+== Character
+
+The kick repeats every five sixteenth notes while the snare states ordinary 4/4. Their alignment keeps changing, producing a cross-cycle without changing meter.
+
+== Design device
+
+Rotation:: Kick attacks fall on steps 1, 6, 11, 16, 21, 26, and 31.
+Anchor:: The backbeat prevents the rotating kick from obscuring the bar line.
+Counterline:: Percussion avoids most kick positions and gives the cycle a second contour.
+
+== Performance notes
+
+* Keep the first kick accented; otherwise let the five-step cycle feel even.
+* Do not swing the kick lane. Swinging hats or percussion is optional.
+* Try alternating two kick pitches to make the rotation easier to hear.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original mathematical rhythm study; no released work was transcribed.
+References:: xref:research:sources.adoc#src-kode9[Kode9] and the xref:research:sources.adoc#src-principe[Príncipe Discos catalogue] provide broad experimental listening context only.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:experimental/interlocking-33334-01.adoc[Interlocking 3+3+3+3+4]
+* xref:electro/electroid-909-01.adoc[Electroid 909 01]
+

@@ -1,0 +1,65 @@
+= Breakbeat Mirror 01
+:pattern-id: EX-165-005
+:family: Experimental breakbeat
+:region: Experimental
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 160–170 BPM
+:source-type: Adaptation
+:confidence: High
+:source-refs: src-krust, src-kode9
+:parent-pattern: JG-165-001
+:tags: experimental, jungle, breakbeat, mirror, two-bar, mutation
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Parent |{parent-pattern}
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- --x- ---x | x--- -x-- ---- ---X
+SNARE  | ---- X--- --g- X--- | ---X -g-- ---X ----
+HI-HAT | x-x- x-xx x-x- x-xx | xx-x -x-x xx-x -x-x
+----
+
+== Character
+
+Bar two reverses each lane's first-bar step order. The result is a literal grid mirror: recognizable material returns with reversed momentum and an accented final kick.
+
+== Transformations
+
+Parent:: {parent-pattern}
+Reduction:: Begin from the parent pattern's breakbeat roles rather than its exact events.
+Mirror:: Reverse all 16 step positions to generate bar two.
+Accent:: Strengthen the final mirrored kick so the loop boundary remains audible.
+
+== Performance notes
+
+* Use consistent sounds across both bars so the reversal is perceptible.
+* Shorten cymbal tails before the mirrored bar if they blur the boundary.
+* For a less literal variation, mirror only kick and snare while leaving hats unchanged.
+
+== Provenance
+
+Type:: {source-type}
+Derived from:: xref:jungle/jungle-break-study-01.adoc[{parent-pattern}] as an explicit structural mutation, not a historical jungle transcription.
+References:: xref:research:sources.adoc#src-krust[DJ Krust] and xref:research:sources.adoc#src-kode9[Kode9] provide listening context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:jungle/jungle-break-study-01.adoc[Jungle Break Study 01]
+* xref:experimental/five-step-rotation-01.adoc[Five-Step Rotation 01]
+
