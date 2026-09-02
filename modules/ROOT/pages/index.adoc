@@ -9,6 +9,7 @@ This library collects drum patterns as plain-text AsciiDoc pages. Each entry com
 * xref:notation.adoc[Notation] — symbols, grid rules, and an example.
 * xref:methodology.adoc[Methodology] — how patterns are researched, documented, and reviewed.
 * xref:research:index.adoc[Research] — sources and broader rhythmic context.
+* xref:research:jamaica-uk-lineage.adoc[Jamaica–UK listening path] — a guided route through the starter collection.
 
 == Design principles
 

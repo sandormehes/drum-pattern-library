@@ -1,0 +1,56 @@
+= One-Drop Reggae Study 01
+:pattern-id: RG-1979-001
+:family: Reggae
+:region: Jamaica
+:era: 1970s study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 1
+:tempo: 70–78 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-bradley, src-katz, src-one-drop
+:tags: reggae, one-drop, cross-stick, offbeat, educational-reduction
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bar
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | ---- ---- X--- ----
+RIM    | ---- ---- X--- ----
+HI-HAT | x-x- x-x- x-x- x-x-
+----
+
+== Character
+
+An intentionally spare educational reduction of a one-drop feel. Beat three carries the joined kick-and-rim weight while the hi-hat keeps the underlying pulse audible.
+
+== Performance notes
+
+* Let beat one breathe; do not add a kick simply because the bar feels empty.
+* Play the rim with a dry cross-stick articulation.
+* Introduce small hi-hat dynamics only after the placement of beat three feels settled.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original educational reduction; not a transcription of Bob Marley & The Wailers' recording.
+References:: xref:research:sources.adoc#src-bradley[Bradley] and xref:research:sources.adoc#src-katz[Katz] provide historical context; xref:research:sources.adoc#src-one-drop[“One Drop”] is the named listening reference.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:jamaica/rockers-reggae-01.adoc[Rockers Reggae Study 01]
+* xref:jamaica/steppers-dub-01.adoc[Steppers Dub 01]
+

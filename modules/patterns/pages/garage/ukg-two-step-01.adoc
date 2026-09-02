@@ -1,0 +1,62 @@
+= UK Garage Two-Step 01
+:pattern-id: UKG-132-001
+:family: UK garage
+:region: United Kingdom
+:era: Late-1990s study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 130–134 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-dreem-teem, src-reynolds-ukg
+:tags: uk-garage, two-step, shuffled, two-bar, syncopated-kick
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---x ---- x--- | X--- ---- --x- ---x
+SNARE  | ---- X--- ---- X--- | ---- X--- ---- X---
+HI-HAT | x-x- x-x- x-x- x-x- | x-x- x-x- x-x- x-x-
+SHAKER | --x- x--x --x- x--x | --x- x--x -x-- x--x
+----
+
+== Character
+
+A two-bar 2-step study: the backbeat remains legible while the kick avoids a four-on-the-floor pattern and the shaker carries the shuffle. The second bar changes the kick path to prevent a one-bar mechanical loop.
+
+== Groove setting
+
+Swing:: Apply swing to hats and shaker, then judge the kicks by ear rather than shifting every lane equally.
+Dynamics:: Alternate shaker strength and keep the snare more stable.
+
+== Performance notes
+
+* Keep low-end events short enough to leave room for a moving bass line.
+* Avoid adding a kick to every quarter note.
+* Try small vocal or percussion responses in the empty sixteenths without changing the foundation.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original educational study, not a transcription of a released garage track.
+References:: xref:research:sources.adoc#src-dreem-teem[Dreem Teem] supplies oral-history context and xref:research:sources.adoc#src-reynolds-ukg[Reynolds] supplies a period listening guide.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:jungle/jungle-break-study-01.adoc[Jungle Break Study 01]
+* xref:dubstep/dubstep-halfstep-01.adoc[Dubstep Half-Step 01]
+

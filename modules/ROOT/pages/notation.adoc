@@ -1,6 +1,6 @@
 = Notation
 
-Patterns use a fixed-width 16-step grid for one bar of 4/4 unless the page says otherwise. Numbered steps remove the need to understand spoken sixteenth-note counting. Vertical separators divide beats, while each instrument remains on one source line for readable Git diffs.
+Patterns use four sixteenth-note steps per beat. A one-bar 4/4 pattern therefore has 16 steps; longer patterns continue on the same source line in groups of four. Numbered steps remove the need to understand spoken sixteenth-note counting. Vertical separators divide beats, while each instrument remains on one source line for readable Git diffs.
 
 == Step symbols
 
@@ -38,7 +38,7 @@ SNARE  | ---- X--- ---- X---
 HI-HAT | x-x- x-x- x-x- x-x-
 ----
 
-The symbols after the track label are the canonical pattern data. Use readable uppercase track labels, exactly four characters per beat, and one space between beats. The custom `drum-pattern` block converts this compact source into the visual grid and legend automatically.
+The symbols after the track label are the canonical pattern data. Use readable uppercase track labels, exactly four characters per beat, and one space between beats. Every track must contain the number of steps declared by the page's `bars` metadata. The custom `drum-pattern` block converts this compact source into the visual grid and legend automatically.
 
 == Timing and dynamics
 

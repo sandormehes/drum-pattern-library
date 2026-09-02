@@ -9,6 +9,7 @@
 :tempo: 128–132 BPM
 :source-type: Adaptation
 :confidence: High
+:source-refs: src-bradley, src-magnetic-man
 :parent-pattern: DH-2001-001
 :tags: hybrid, dancehall-derived, grime, mutation, negative-space
 
@@ -57,6 +58,7 @@ Tempo:: Raise the working range from roughly 100 BPM to roughly 130 BPM.
 Type:: {source-type}
 Derived from:: xref:jamaica/sparse-dancehall-01.adoc[{parent-pattern}]
 Transformation record:: Documented above.
+References:: xref:research:sources.adoc#src-bradley[Bradley] and xref:research:sources.adoc#src-magnetic-man[Magnetic Man] frame the Jamaican and UK contexts; the actual parent is the library pattern named above.
 Confidence:: {confidence}
 
 == Related patterns

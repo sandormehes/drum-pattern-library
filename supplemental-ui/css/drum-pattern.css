@@ -19,6 +19,10 @@
   width: 100%;
 }
 
+.drum-pattern.multi-bar table {
+  min-width: 48rem;
+}
+
 .drum-pattern th,
 .drum-pattern td {
   border: 0;
@@ -71,7 +75,9 @@
 }
 
 .drum-pattern tbody td:nth-child(n+6):nth-child(-n+9),
-.drum-pattern tbody td:nth-child(n+14):nth-child(-n+17) {
+.drum-pattern tbody td:nth-child(n+14):nth-child(-n+17),
+.drum-pattern tbody td:nth-child(n+22):nth-child(-n+25),
+.drum-pattern tbody td:nth-child(n+30):nth-child(-n+33) {
   background: #f8f9fb;
 }
 

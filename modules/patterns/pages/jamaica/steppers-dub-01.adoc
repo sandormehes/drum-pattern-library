@@ -9,6 +9,7 @@
 :tempo: 72–80 BPM
 :source-type: Traditional
 :confidence: Medium
+:source-refs: src-bradley, src-veal, src-katz
 :tags: dub, steppers, four-on-the-floor, offbeat
 
 [cols="1,3"]
@@ -46,6 +47,7 @@ A simple steppers foundation: kick on every quarter note, backbeat on two and fo
 
 Type:: {source-type}
 Source:: Generic educational example of the widely used steppers approach; not a transcription of one recording.
+References:: xref:research:sources.adoc#src-bradley[Bradley], xref:research:sources.adoc#src-veal[Veal], and xref:research:sources.adoc#src-katz[Katz].
 Confidence:: {confidence}
 
 == Related patterns

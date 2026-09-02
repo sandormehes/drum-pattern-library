@@ -1,0 +1,34 @@
+= Jamaica–UK Listening Path
+
+This page offers one route through the library: from Jamaican reggae and dub practices to selected UK breakbeat and bass-music forms. It is a listening path, not a claim that each genre descends from a single predecessor. Migration, sound-system practice, pirate radio, studio technology, US dance music, hip-hop, rave, R&B, and many local scenes all matter.
+
+== 1. Weight and space
+
+Begin with xref:patterns:jamaica/one-drop-reggae-01.adoc[One-Drop Reggae Study 01], then compare xref:patterns:jamaica/rockers-reggae-01.adoc[Rockers Reggae Study 01] and xref:patterns:jamaica/steppers-dub-01.adoc[Steppers Dub 01]. Listen for what changes when the kick moves from a single structural event to a more continuous pulse. Dub's use of subtraction, bass weight, and studio space is as important to this path as any single drum cell.
+
+Research anchors:: xref:sources.adoc#src-bradley[Bradley], xref:sources.adoc#src-veal[Veal], xref:sources.adoc#src-katz[Katz].
+
+== 2. The digital rhythm section
+
+Continue with xref:patterns:jamaica/sleng-teng-digital-study-01.adoc[Sleng Teng Digital Study 01] and xref:patterns:jamaica/sparse-dancehall-01.adoc[Sparse Dancehall 01]. Their grids are original reductions, but they foreground a major change in method: the rhythm can be designed as a compact machine pattern whose identity survives new voicings and performances.
+
+Research anchors:: xref:sources.adoc#src-sleng-teng[Wayne Smith], xref:sources.adoc#src-katz[Katz].
+
+== 3. Breaks, shuffle, and pirate-radio mutation
+
+The two-bar xref:patterns:jungle/jungle-break-study-01.adoc[Jungle Break Study 01] demonstrates variation through rearranged breakbeat roles. The xref:patterns:garage/ukg-two-step-01.adoc[UK Garage Two-Step 01] keeps a stable backbeat but removes the house kick's regularity and makes shuffle part of the composition.
+
+Research anchors:: xref:sources.adoc#src-krust[DJ Krust], xref:sources.adoc#src-dreem-teem[Dreem Teem], xref:sources.adoc#src-reynolds-ukg[Reynolds].
+
+== 4. Half-step and negative space
+
+Finish with xref:patterns:grime/grime-130-03.adoc[Grime 130 03] and xref:patterns:dubstep/dubstep-halfstep-01.adoc[Dubstep Half-Step 01]. Both make a fast tempo feel spacious by reducing the drum frame. The xref:patterns:hybrids/jamaica-uk-mutation-01.adoc[Jamaica–UK Mutation 01] then exposes its changes explicitly instead of presenting the hybrid as a historical transcription.
+
+Research anchors:: xref:sources.adoc#src-magnetic-man[Magnetic Man], xref:sources.adoc#src-plastician[Plastician], xref:sources.adoc#src-wiley[Wiley].
+
+== How to use the path
+
+. Program each grid with neutral drum sounds.
+. Compare the placement and density of the kick, backbeat, and smallest subdivision.
+. Only then change timbre, ambience, swing, and bass interaction.
+. Read each provenance section before treating a grid as historical evidence.

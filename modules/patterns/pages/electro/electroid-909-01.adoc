@@ -9,6 +9,7 @@
 :tempo: 128–132 BPM
 :source-type: Original
 :confidence: High
+:source-refs: src-kode9
 :tags: electro, electroid, 909, 130-bpm, toms, machine-funk
 
 [cols="1,3"]
@@ -53,6 +54,7 @@ Disruption:: The tom lane crosses the kick pattern and creates the loop's funk.
 
 Type:: {source-type}
 Source:: Original library study combining the project's experimental 130 BPM and 909-percussion directions.
+Reference:: xref:research:sources.adoc#src-kode9[Kode9] is used as context for hybrid electronic continuities, not as a source for the grid.
 Confidence:: {confidence}
 
 == Related patterns

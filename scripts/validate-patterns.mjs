@@ -3,6 +3,14 @@ import path from 'node:path'
 
 const pagesRoot = path.resolve('modules/patterns/pages')
 const validSymbols = new Set(['-', 'x', 'X', 'g', 'o'])
+const requiredAttributes = [
+  'pattern-id', 'family', 'region', 'era', 'meter', 'subdivision', 'bars',
+  'tempo', 'source-type', 'confidence', 'source-refs', 'tags',
+]
+const validSourceTypes = new Set(['Original', 'Transcription', 'Adaptation', 'Traditional'])
+const validConfidence = new Set(['High', 'Medium', 'Low'])
+const sourceRegister = await readFile(path.resolve('modules/research/pages/sources.adoc'), 'utf8')
+const registeredSourceIds = new Set([...sourceRegister.matchAll(/^\[\[([^\]]+)\]\]$/gm)].map((match) => match[1]))
 
 async function findAsciiDocFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true })
@@ -14,10 +22,40 @@ async function findAsciiDocFiles(directory) {
 }
 
 let checkedPatterns = 0
+const patternIds = new Map()
 
 for (const file of await findAsciiDocFiles(pagesRoot)) {
   const source = await readFile(file, 'utf8')
   if (!source.includes(':pattern-id:')) continue
+
+  const attributes = Object.fromEntries(
+    [...source.matchAll(/^:([a-z-]+):\s*(.+)$/gm)].map((match) => [match[1], match[2].trim()]),
+  )
+  for (const attribute of requiredAttributes) {
+    if (!attributes[attribute]) throw new Error(`${file}: missing :${attribute}: attribute`)
+  }
+  if (patternIds.has(attributes['pattern-id'])) {
+    throw new Error(`${file}: duplicate pattern ID ${attributes['pattern-id']} (also in ${patternIds.get(attributes['pattern-id'])})`)
+  }
+  patternIds.set(attributes['pattern-id'], file)
+
+  if (!validSourceTypes.has(attributes['source-type'])) {
+    throw new Error(`${file}: invalid source type ${attributes['source-type']}`)
+  }
+  if (!validConfidence.has(attributes.confidence)) {
+    throw new Error(`${file}: invalid confidence ${attributes.confidence}`)
+  }
+  if (attributes.meter !== '4/4' || attributes.subdivision !== '1/16') {
+    throw new Error(`${file}: validator currently supports only 4/4 at 1/16 subdivision`)
+  }
+  const bars = Number.parseInt(attributes.bars, 10)
+  if (!Number.isInteger(bars) || bars < 1) throw new Error(`${file}: :bars: must be a positive integer`)
+
+  for (const sourceId of attributes['source-refs'].split(',').map((value) => value.trim())) {
+    if (!registeredSourceIds.has(sourceId)) {
+      throw new Error(`${file}: source reference ${sourceId} is not registered in modules/research/pages/sources.adoc`)
+    }
+  }
 
   const patternSection = source.match(/== Pattern\n([\s\S]*?)(?=\n== )/)?.[1]
   if (!patternSection) throw new Error(`${file}: missing Pattern section`)
@@ -29,8 +67,9 @@ for (const file of await findAsciiDocFiles(pagesRoot)) {
     const [label, ...groups] = line.split('|')
     const symbols = groups.join('').replaceAll(' ', '').split('')
 
-    if (symbols.length !== 16) {
-      throw new Error(`${file}: ${label.trim()} has ${symbols.length} steps; expected 16`)
+    const expectedSteps = bars * 16
+    if (symbols.length !== expectedSteps) {
+      throw new Error(`${file}: ${label.trim()} has ${symbols.length} steps; expected ${expectedSteps} for ${bars} bar(s)`)
     }
 
     const invalid = symbols.filter((symbol) => !validSymbols.has(symbol))

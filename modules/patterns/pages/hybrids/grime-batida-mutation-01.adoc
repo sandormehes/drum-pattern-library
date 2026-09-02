@@ -9,6 +9,7 @@
 :tempo: 140 BPM
 :source-type: Original
 :confidence: High
+:source-refs: src-plastician, src-principe
 :tags: grime, batida, principe, half-time, syncopation, percussion, 140-bpm
 
 [cols="1,3"]
@@ -63,6 +64,7 @@ Dynamics:: Keep ghost hits markedly quieter than the normal percussion. The open
 
 Type:: {source-type}
 Source:: An original pattern informed by grime's half-time framework and batida/Príncipe-style interlocking percussion; not a transcription of a particular work.
+References:: xref:research:sources.adoc#src-plastician[Plastician] and the xref:research:sources.adoc#src-principe[Príncipe Discos catalogue] provide scene and listening context.
 Confidence:: {confidence}
 
 == Related patterns

@@ -1,0 +1,56 @@
+= Jungle Break Study 01
+:pattern-id: JG-165-001
+:family: Jungle
+:region: United Kingdom
+:era: Early-1990s study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 160–170 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-krust, src-veal
+:tags: jungle, breakbeat, two-bar, syncopated, sound-system
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- --x- ---- | X--- ---x ---- --x-
+SNARE  | ---- X--- ---- X--- | ---- X--- --g- X---
+HI-HAT | x-x- x-xx x-x- x-xx | x-xx x-x- x-xx x-x-
+----
+
+== Character
+
+A two-bar programmed breakbeat study. The first bar states a stable kick-and-snare frame; the second redistributes kicks and adds a ghost snare so the loop turns over rather than merely repeating.
+
+== Performance notes
+
+* Treat each lane as the result of slicing and rearranging a break, even when programming single hits.
+* Keep the backbeat strong while allowing the surrounding events to change level and tone.
+* Test the pattern with substantial sub-bass and open space between phrases.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original breakbeat study; not a transcription or reconstruction of a sampled break.
+References:: xref:research:sources.adoc#src-krust[DJ Krust] provides first-person jungle context; xref:research:sources.adoc#src-veal[Veal] supports the broader sound-system and dub framing.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:garage/ukg-two-step-01.adoc[UK Garage Two-Step 01]
+* xref:grime/grime-130-03.adoc[Grime 130 03]
+

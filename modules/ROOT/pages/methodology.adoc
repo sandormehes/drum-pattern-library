@@ -9,6 +9,7 @@ The library distinguishes what is heard or transcribed from what is inferred. Ev
 . Put each instrument or rhythmic role on its own fixed-width line.
 . Describe the groove's character and include only performance notes that affect the feel.
 . Record provenance, source details, and confidence.
+. Add every source to the source register, then list its anchor IDs in the page's `source-refs` attribute.
 . Link closely related patterns rather than duplicating their background text.
 
 == Provenance
@@ -27,3 +28,4 @@ Use a confidence value of _high_, _medium_, or _low_ for transcriptions and hist
 * Metadata describes the pattern without tying it to a specific sample.
 * Musical edits appear as small, legible line changes in a Git diff.
 * Factual claims have a source or are clearly labeled as interpretation.
+* Every `source-refs` ID resolves to an entry in the source register.

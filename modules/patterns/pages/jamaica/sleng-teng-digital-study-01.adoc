@@ -1,0 +1,57 @@
+= Sleng Teng Digital Study 01
+:pattern-id: DH-1985-002
+:family: Digital dancehall
+:region: Jamaica
+:era: Mid-1980s study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 1
+:tempo: 80–88 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-katz, src-sleng-teng
+:tags: dancehall, digital, drum-machine, sleng-teng, educational-study
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bar
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- --x- ----
+SNARE  | ---- X--- ---- X---
+HI-HAT | x-x- x-x- x-x- x-x-
+PERC   | ---x ---- -x-- ---g
+----
+
+== Character
+
+A compact drum-machine study of early digital dancehall economy. The extra percussion supplies the circular motion while the kick and snare remain deliberately plain.
+
+== Performance notes
+
+* Use short, synthetic sounds and avoid acoustic-room realism.
+* Keep the final ghost hit quiet enough to be felt as a pickup.
+* Pair the drums with an independent bass motif rather than copying the kick lane.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original study of digital dancehall principles; it does not reproduce the preset or full riddim heard on “Under Me Sleng Teng.”
+References:: xref:research:sources.adoc#src-katz[Katz] provides oral-history context and xref:research:sources.adoc#src-sleng-teng[Wayne Smith] is the primary listening reference.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:jamaica/sparse-dancehall-01.adoc[Sparse Dancehall 01]
+* xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica–UK Mutation 01]
+

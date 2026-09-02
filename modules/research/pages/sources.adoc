@@ -1,15 +1,55 @@
-= Sources
+= Source Register
 
-Add books, articles, interviews, recordings, and other references here as the library grows.
+This register separates listening references and historical context from the library's original notation. A reference attached to an original or traditional study supports its context; it does not imply that the grid is a note-for-note transcription.
 
-[cols="2,2,2,3", options="header"]
-|===
-|Creator |Title |Date |Notes
+== Jamaican foundations
 
-|—
-|—
-|—
-|No external sources have been registered yet.
-|===
+[[src-bradley]]
+Lloyd Bradley, _Bass Culture: When Reggae Was King_ (Viking, 2000):: Historical account of Jamaican popular music, sound-system culture, reggae, dub, and dancehall. Used for broad chronology and terminology.
 
-For a recording, include the artist, track title, release, label, year, and the passage used. For a web source, include the author, page title, publisher, publication date when available, URL, and access date.
+[[src-veal]]
+Michael E. Veal, _Dub: Soundscapes and Shattered Songs in Jamaican Reggae_ (Wesleyan University Press, 2007):: Study of dub's musical practices, studio methods, rhythmic space, and international legacy.
+
+[[src-katz]]
+David Katz, _Solid Foundation: An Oral History of Reggae_ (Bloomsbury, revised edition, 2012):: Artist- and producer-led oral history used to cross-check descriptions of reggae rhythm styles and the digital transition.
+
+[[src-one-drop]]
+Bob Marley & The Wailers, “One Drop,” _Survival_ (Island Records, 1979):: Listening reference for the named reggae feel. The library pattern is an educational reduction, not a transcription.
+
+[[src-rockers]]
+Augustus Pablo, “Rockers Rock,” single (Rockers International, 1975):: Listening reference for the rockers aesthetic and for variation beyond a single universal drum formula.
+
+[[src-sleng-teng]]
+Wayne Smith, “Under Me Sleng Teng,” single (Jammy's Records, 1985):: Landmark listening reference for Jamaica's digital dancehall transition and machine-built riddims.
+
+== UK developments
+
+[[src-krust]]
+Robert McCallum, link:https://daily.redbullmusicacademy.com/2015/03/dj-krust-interview-2015[“Interview: Bristol's DJ Krust”], Red Bull Music Academy Daily (2015; accessed 2026-09-02):: First-person discussion with a jungle and drum & bass producer, used as context for breakbeat-led UK sound-system music.
+
+[[src-dreem-teem]]
+Bill Brewster and Frank Broughton, link:https://daily.redbullmusicacademy.com/2018/01/dreem-teem-interview[“Dreem Teem on the Birth of UK Garage”], Red Bull Music Academy Daily (interview recorded 2005, published 2018; accessed 2026-09-02):: Oral history of UK garage's emergence, pirate radio, and its relationship to grime and dubstep.
+
+[[src-reynolds-ukg]]
+Simon Reynolds, link:https://daily.redbullmusicacademy.com/2012/05/simon-reynolds-ukg-rb[“UKG x R&B”], Red Bull Music Academy Daily (2012; accessed 2026-09-02):: Overview and listening guide for late-1990s 2-step garage and its rhythmic, vocal, and pirate-radio context.
+
+[[src-magnetic-man]]
+Red Bull Music Academy, link:https://daily.redbullmusicacademy.com/2011/10/magnetic-man-interview[“Magnetic Man on the Early Days of UK Bass”] (2011; accessed 2026-09-02):: Interview with Artwork, Benga, and Skream covering the movement from garage toward dubstep and the role of half-step, grime, and Jamaican dancehall remixes.
+
+[[src-plastician]]
+Plastician, link:https://daily.redbullmusicacademy.com/2017/01/plastician-feature[“Plastician Talks Grime”], Red Bull Music Academy Daily (2017; accessed 2026-09-02):: First-person account of the overlapping early grime and dubstep scenes.
+
+[[src-wiley]]
+Wiley, “Eskimo,” _Eskimo_ EP (Wiley Kat Records, 2002):: Listening reference for sparse early grime rhythm and timbre. Library grids that cite it are independent studies, not transcriptions.
+
+== Experimental continuities
+
+[[src-kode9]]
+Chal Ravens, link:https://daily.redbullmusicacademy.com/2017/11/kode9-top-flight-interview[“Kode9 on Diggin' in the Carts and the Evolution of Hyperdub”], Red Bull Music Academy Daily (2017; accessed 2026-09-02):: Interview discussing the traces of jungle, garage, dub, reggae, dancehall, grime, and other forms within later electronic music.
+
+[[src-principe]]
+Príncipe Discos, link:https://principediscos.bandcamp.com/[label catalogue], Bandcamp (accessed 2026-09-02):: Primary listening catalogue for contemporary Lisbon dance music. Used only as broad listening context for the original batida-informed hybrid, not as the source of a transcription.
+
+== Citation rules
+
+For recordings, include artist, title, release or label, and year. For web sources, include author, page title, publisher, publication date when available, URL, and access date. A pattern page must identify registered sources through `source-refs` and explain whether each is evidence for a transcription, a listening reference, or contextual research.

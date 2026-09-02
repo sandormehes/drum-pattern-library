@@ -1,9 +1,18 @@
 * xref:index.adoc[Patterns]
 ** Jamaica
+*** xref:jamaica/one-drop-reggae-01.adoc[One-Drop Reggae Study 01]
+*** xref:jamaica/rockers-reggae-01.adoc[Rockers Reggae Study 01]
 *** xref:jamaica/sparse-dancehall-01.adoc[Sparse Dancehall 01]
+*** xref:jamaica/sleng-teng-digital-study-01.adoc[Sleng Teng Digital Study 01]
 *** xref:jamaica/steppers-dub-01.adoc[Steppers Dub 01]
+** Jungle
+*** xref:jungle/jungle-break-study-01.adoc[Jungle Break Study 01]
+** UK Garage
+*** xref:garage/ukg-two-step-01.adoc[UK Garage Two-Step 01]
 ** Grime
 *** xref:grime/grime-130-03.adoc[Grime 130 03]
+** Dubstep
+*** xref:dubstep/dubstep-halfstep-01.adoc[Dubstep Half-Step 01]
 ** Electro
 *** xref:electro/electroid-909-01.adoc[Electroid 909 01]
 ** Hybrids

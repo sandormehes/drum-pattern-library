@@ -4,12 +4,27 @@ Patterns are grouped by musical family and region for browsing, while stable IDs
 
 == Jamaica
 
+* xref:jamaica/one-drop-reggae-01.adoc[One-Drop Reggae Study 01] — an educational reduction centered on beat three.
+* xref:jamaica/rockers-reggae-01.adoc[Rockers Reggae Study 01] — a more active reggae and dub foundation.
 * xref:jamaica/sparse-dancehall-01.adoc[Sparse Dancehall 01] — sparse, syncopated digital dancehall skeleton.
+* xref:jamaica/sleng-teng-digital-study-01.adoc[Sleng Teng Digital Study 01] — an early digital dancehall machine-rhythm study.
 * xref:jamaica/steppers-dub-01.adoc[Steppers Dub 01] — four-on-the-floor dub foundation with offbeat hats.
+
+== Jungle
+
+* xref:jungle/jungle-break-study-01.adoc[Jungle Break Study 01] — a two-bar programmed break with variation at the turnaround.
+
+== UK Garage
+
+* xref:garage/ukg-two-step-01.adoc[UK Garage Two-Step 01] — a shuffled two-bar framework with displaced kicks.
 
 == Grime
 
 * xref:grime/grime-130-03.adoc[Grime 130 03] — half-time 130 BPM framework with ghosted syncopation.
+
+== Dubstep
+
+* xref:dubstep/dubstep-halfstep-01.adoc[Dubstep Half-Step 01] — sparse 140 BPM half-step with room for sub-bass.
 
 == Electro
 

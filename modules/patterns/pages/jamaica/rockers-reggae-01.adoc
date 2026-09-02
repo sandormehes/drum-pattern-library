@@ -1,0 +1,57 @@
+= Rockers Reggae Study 01
+:pattern-id: RG-1975-002
+:family: Reggae
+:region: Jamaica
+:era: Mid-1970s study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 1
+:tempo: 72–82 BPM
+:source-type: Original
+:confidence: Medium
+:source-refs: src-bradley, src-veal, src-rockers
+:tags: reggae, rockers, dub, syncopated-kick, educational-study
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bar
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- X--x ----
+SNARE  | ---- X--- ---- X---
+HI-HAT | x-x- x-x- x-x- x-x-
+PERC   | ---- ---g ---- --x-
+----
+
+== Character
+
+A rockers-oriented study that adds a more active kick path and backbeat to the reggae pulse. It is one possible working pattern, not a claim that “rockers” has a single canonical grid.
+
+== Performance notes
+
+* Keep the beat-three kick strongest; the late kick is a pickup.
+* Let the ghost percussion disappear into the drum ambience.
+* In a dub treatment, remove events rather than filling every gap.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original educational study assembled from documented style characteristics, not transcribed from “Rockers Rock.”
+References:: xref:research:sources.adoc#src-bradley[Bradley] and xref:research:sources.adoc#src-veal[Veal] provide context; xref:research:sources.adoc#src-rockers[Augustus Pablo] is a listening reference.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:jamaica/one-drop-reggae-01.adoc[One-Drop Reggae Study 01]
+* xref:jamaica/steppers-dub-01.adoc[Steppers Dub 01]
+

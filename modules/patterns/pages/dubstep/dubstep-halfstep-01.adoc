@@ -1,0 +1,57 @@
+= Dubstep Half-Step 01
+:pattern-id: DS-140-001
+:family: Dubstep
+:region: United Kingdom
+:era: Early-2000s study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 1
+:tempo: 138–142 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-magnetic-man, src-plastician, src-veal
+:tags: dubstep, half-step, sub-bass, sparse, 140-bpm
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bar
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- ---x ----
+SNARE  | ---- ---- X--- ----
+HI-HAT | --x- --x- --x- --x-
+PERC   | ---- -g-- ---- ---x
+----
+
+== Character
+
+A sparse 140 BPM half-step framework with its main snare on beat three. The apparent slowness of the drum frame leaves room for sub-bass and small syncopated events at the full tempo.
+
+== Performance notes
+
+* Give the beat-three snare enough weight to define the entire bar.
+* Keep the late percussion distinct from the sub-bass rhythm.
+* Use delay or reverb as rhythmic events, with space preserved around their tails.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original educational study; no released track was transcribed.
+References:: xref:research:sources.adoc#src-magnetic-man[Magnetic Man] and xref:research:sources.adoc#src-plastician[Plastician] provide first-person scene context; xref:research:sources.adoc#src-veal[Veal] supports the dub-space framing.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:garage/ukg-two-step-01.adoc[UK Garage Two-Step 01]
+* xref:grime/grime-130-03.adoc[Grime 130 03]
+* xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica–UK Mutation 01]
