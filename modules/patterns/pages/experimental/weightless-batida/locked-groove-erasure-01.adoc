@@ -1,0 +1,64 @@
+= Locked-Groove Erasure 01
+:pattern-id: WB-142-004
+:family: Weightless–batida hybrid
+:region: Experimental / UK–Lisbon dialogue
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 140–144 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-weightless, src-principe, src-principe-profile
+:tags: weightless, batida-informed, locked-groove, erasure, two-bar
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- --x- ---- x--- | X--- ---- ---- ----
+SNARE  | ---- X--- ---- X--- | ---- ---- X--- ----
+PERC A | -x-x x--x -x-x x--- | -x-- ---- -x-- ----
+PERC B | --x- -x-- x--x --x- | ---- -x-- ---- ---g
+METAL  | ---- ---- ---- ---- | ---- ---o ---- ----
+----
+
+== Character
+
+Bar one behaves like a compact percussion lock. Bar two removes most of that information, leaving isolated memories of the original pattern and one suspended metal tone.
+
+== Design device
+
+Statement:: The first bar establishes a dense, repeating physical pattern.
+Erasure:: The second bar retains only selected structural residues.
+Memory:: Surviving hits occupy positions heard in the first bar, so absence becomes legible.
+
+== Performance notes
+
+* Keep identical sounds and levels for events that survive into bar two.
+* Automate space or noise upward as event density falls.
+* Avoid a turnaround fill; the erased bar is already the variation.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original study combining a percussion lock with weightless subtraction; not a transcription.
+References:: The xref:research:sources.adoc#src-principe-profile[Príncipe profile] documents stripped percussion and locked-groove practice; xref:research:sources.adoc#src-weightless[Different Circles] informs the spatial erasure. The xref:research:sources.adoc#src-principe[Príncipe catalogue] is a listening reference.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:experimental/digital-dub-dropout-01.adoc[Digital-Dub Dropout 01]
+* xref:experimental/weightless-batida/vacuum-batida-01.adoc[Vacuum Batida 01]
+

@@ -1,0 +1,64 @@
+= Vacuum Batida 01
+:pattern-id: WB-140-001
+:family: Weightless–batida hybrid
+:region: Experimental / UK–Lisbon dialogue
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 138–142 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-weightless, src-principe, src-principe-profile
+:tags: weightless, batida-informed, vacuum, two-bar, negative-space
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- ---- ---x | ---- --x- ---- ----
+SNARE  | ---- ---- X--- ---- | ---- ---X ---- ----
+HI-HAT | ---- --x- ---- x--- | --x- ---- ---- --x-
+PERC   | -x-x x--- -x-- --g- | x--x --x- -g-x x---
+METAL  | ---- ---o ---- ---- | ---- -x-- ---- o---
+----
+
+== Character
+
+A busy percussion surface hangs inside a nearly empty kick-and-snare frame. Sustained metal hits imply a larger acoustic space without filling it with conventional cymbal timekeeping.
+
+== Design device
+
+Vacuum:: Foundation hits are too sparse to explain the groove by themselves.
+Propulsion:: Dry percussion provides continuous forward motion.
+Scale:: Two sustained metal events make the empty regions feel larger.
+
+== Performance notes
+
+* Keep kick and snare physically heavy but extremely short.
+* Make percussion pitches contrast without forming an obvious melody.
+* Allow metal tails to overlap events, but not each other.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original hybrid study; no Logos, Mumdance, or batida recording was transcribed.
+References:: xref:research:sources.adoc#src-weightless[Different Circles] informs the spatial frame; the xref:research:sources.adoc#src-principe[Príncipe catalogue] and xref:research:sources.adoc#src-principe-profile[label profile] provide batida listening and community context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:experimental/weightless-batida/off-one-pressure-01.adoc[Off-One Pressure 01]
+* xref:hybrids/grime-batida-mutation-01.adoc[Grime-Batida Mutation 01]
+

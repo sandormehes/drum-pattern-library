@@ -1,0 +1,64 @@
+= Ping Interlock 01
+:pattern-id: WB-140-002
+:family: Weightless–batida hybrid
+:region: Experimental / UK–Lisbon dialogue
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 1
+:tempo: 138–142 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-weightless, src-mumdance-archive, src-principe-profile
+:tags: weightless, batida-informed, ping, interlocking, metallic
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bar
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- --x- ----
+SNARE  | ---- ---- X--- ----
+PING   | --x- x--- ---x -x--
+PERC   | -x-x --x- x--- --x-
+SHAKER | ---- -g-- ---- -g--
+----
+
+== Character
+
+Four isolated pings form a cold signal path while the percussion fills different positions around them. The half-step foundation remains recognizable but does not dominate the surface.
+
+== Design device
+
+Interlock:: Ping and percussion never strike together.
+Signal:: One bright, narrow-band sound creates identity with only four events.
+Restraint:: Ghost shakers suggest subdivision without a continuous hat line.
+
+== Performance notes
+
+* Tune each ping identically and vary decay rather than pitch.
+* Keep the percussion dry and close; place the ping in a longer artificial space.
+* Try muting the snare every fourth repetition without adding a fill.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original hybrid study; not a transcription or style reconstruction.
+References:: xref:research:sources.adoc#src-weightless[Different Circles] and the xref:research:sources.adoc#src-mumdance-archive[Mumdance archive] frame the weightless use of space; the xref:research:sources.adoc#src-principe-profile[Príncipe profile] frames percussion-led interlock.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:experimental/weightless-batida/cold-percussion-relay-01.adoc[Cold Percussion Relay 01]
+* xref:dubstep/dubstep-halfstep-01.adoc[Dubstep Half-Step 01]
+

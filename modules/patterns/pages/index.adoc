@@ -39,6 +39,17 @@ Patterns are grouped by musical family and region for browsing, while stable IDs
 * xref:experimental/breakbeat-mirror-01.adoc[Breakbeat Mirror 01] — a breakbeat whose second bar reverses the first.
 * xref:experimental/interlocking-33334-01.adoc[Interlocking 3+3+3+3+4] — asymmetric accent grouping held against a 4/4 backbeat.
 
+=== Weightless × Batida series
+
+This focused xref:experimental/weightless-batida/index.adoc[six-pattern series] puts sparse, tension-heavy grime architecture in dialogue with percussion-led Lisbon batida. All entries are original studies, not transcriptions.
+
+* xref:experimental/weightless-batida/vacuum-batida-01.adoc[Vacuum Batida 01] — batida-informed percussion suspended around a nearly absent foundation.
+* xref:experimental/weightless-batida/ping-interlock-01.adoc[Ping Interlock 01] — cold metallic signals interlocked with dry percussion.
+* xref:experimental/weightless-batida/off-one-pressure-01.adoc[Off-One Pressure 01] — two bars that withhold a kick from both downbeats.
+* xref:experimental/weightless-batida/locked-groove-erasure-01.adoc[Locked-Groove Erasure 01] — a dense percussion statement erased into weightless residue.
+* xref:experimental/weightless-batida/seven-step-bell-01.adoc[Seven-Step Bell Rotation 01] — a seven-step bell cycle crossing the 4/4 frame.
+* xref:experimental/weightless-batida/cold-percussion-relay-01.adoc[Cold Percussion Relay 01] — wood, metal, and sustained voices trading rhythmic responsibility.
+
 == Hybrids
 
 * xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica-UK Mutation 01] — a documented mutation of the sparse dancehall starter.

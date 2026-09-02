@@ -1,0 +1,27 @@
+= Weightless × Batida Experiments
+
+This series explores one deliberately speculative meeting point: the spatially untethered, tension-heavy club architecture associated with Logos, Mumdance, and Different Circles, crossed with fast, stripped, interlocking percussion informed by Lisbon batida.
+
+These are original composition studies. “Weightless” describes the treatment of space, impact, and expectation; “batida-informed” describes percussion-led motion and interlock. Neither term is used to claim authorship, authenticity, or a transcription of the referenced artists.
+
+== Series constraints
+
+* Work around 136–142 BPM.
+* Let percussion carry motion while kicks and snares remain discontinuous.
+* Treat silence, tails, and isolated metallic events as parts of the rhythm.
+* Document the device that distinguishes each pattern.
+* Keep regional context specific: this series refers primarily to the Afro-diasporic Lisbon batida scene documented in the xref:research:sources.adoc#src-principe-profile[Príncipe profile].
+
+== Patterns
+
+* xref:experimental/weightless-batida/vacuum-batida-01.adoc[Vacuum Batida 01] — dense percussion suspended around a nearly absent drum foundation.
+* xref:experimental/weightless-batida/ping-interlock-01.adoc[Ping Interlock 01] — isolated metallic signals threaded through an interlocking percussion cell.
+* xref:experimental/weightless-batida/off-one-pressure-01.adoc[Off-One Pressure 01] — a two-bar groove that refuses a kick on either downbeat.
+* xref:experimental/weightless-batida/locked-groove-erasure-01.adoc[Locked-Groove Erasure 01] — a propulsive first bar progressively erased in the second.
+* xref:experimental/weightless-batida/seven-step-bell-01.adoc[Seven-Step Bell Rotation 01] — a seven-sixteenth bell cycle passing across 4/4.
+* xref:experimental/weightless-batida/cold-percussion-relay-01.adoc[Cold Percussion Relay 01] — percussion roles handed between dry, metallic, and sustained voices.
+
+== Context
+
+Read the xref:research:sources.adoc#src-weightless[Logos and Mumdance interview], xref:research:sources.adoc#src-mumdance-archive[Mumdance interview archive], xref:research:sources.adoc#src-principe[Príncipe catalogue], and xref:research:sources.adoc#src-lycox[DJ Lycox interview] alongside the grids.
+

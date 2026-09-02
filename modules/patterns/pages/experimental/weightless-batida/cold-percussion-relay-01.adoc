@@ -1,0 +1,63 @@
+= Cold Percussion Relay 01
+:pattern-id: WB-140-006
+:family: Weightless–batida hybrid
+:region: Experimental / UK–Lisbon dialogue
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 138–142 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-weightless, src-mumdance-archive, src-principe, src-lycox
+:tags: weightless, batida-informed, relay, metallic, two-bar
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- --x- ---- | ---- x--- ---- ---x
+SNARE  | ---- ---- X--- ---- | ---- ---X ---- ----
+WOOD   | -x-- x--- ---x --x- | x--- --x- -x-- ----
+METAL  | ---x --x- x--- ---- | --x- ---- ---x x---
+RING   | ---- ---- ---- -o-- | ---- ---- o--- ----
+----
+
+== Character
+
+Dry wood and metal voices exchange a nearly continuous rhythm while sustained tones appear only at the end of each phrase. The foundation is sparse enough that the changing material of the relay becomes the groove.
+
+== Design device
+
+Relay:: Wood and metal alternate roles without simple call-and-response symmetry.
+Temperature:: Dry wooden attacks contrast with cold, narrow metallic hits.
+Afterimage:: Sustained events occupy gaps after the busiest exchanges.
+
+== Performance notes
+
+* Make wood and metal equally present but spectrally distinct.
+* Pan relay voices slightly apart; keep kick and snare centered.
+* Do not quantize the sustained tails—shape their endings by ear.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original hybrid study; no referenced artist or scene recording was transcribed.
+References:: xref:research:sources.adoc#src-weightless[Different Circles] and the xref:research:sources.adoc#src-mumdance-archive[Mumdance archive] frame the spatial design; the xref:research:sources.adoc#src-principe[Príncipe catalogue] and xref:research:sources.adoc#src-lycox[DJ Lycox interview] provide batida listening and community context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:experimental/weightless-batida/ping-interlock-01.adoc[Ping Interlock 01]
+* xref:experimental/weightless-batida/locked-groove-erasure-01.adoc[Locked-Groove Erasure 01]

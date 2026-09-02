@@ -44,11 +44,23 @@ Wiley, “Eskimo,” _Eskimo_ EP (Wiley Kat Records, 2002):: Listening reference
 
 == Experimental continuities
 
+[[src-weightless]]
+FACT, link:https://www.factmag.com/2014/10/01/mumdance-logos-different-circles-weightless/[“Mumdance and Logos launch label Different Circles”] (2014; accessed 2026-09-02):: Interview in which Logos and Mumdance describe weightless music as spacious, sometimes ambient or beatless club material that retains club-oriented production and engineering.
+
+[[src-mumdance-archive]]
+Mumdance, link:https://www.mumdance.com/interviews[interview archive] (accessed 2026-09-02):: Artist-maintained index documenting conversations with Logos and others about grime, weightless music, production, and related practices. Used as a route to first-person context, not as a source for transcription.
+
 [[src-kode9]]
 Chal Ravens, link:https://daily.redbullmusicacademy.com/2017/11/kode9-top-flight-interview[“Kode9 on Diggin' in the Carts and the Evolution of Hyperdub”], Red Bull Music Academy Daily (2017; accessed 2026-09-02):: Interview discussing the traces of jungle, garage, dub, reggae, dancehall, grime, and other forms within later electronic music.
 
 [[src-principe]]
 Príncipe Discos, link:https://principediscos.bandcamp.com/[label catalogue], Bandcamp (accessed 2026-09-02):: Primary listening catalogue for contemporary Lisbon dance music. Used only as broad listening context for the original batida-informed hybrid, not as the source of a transcription.
+
+[[src-principe-profile]]
+Ian McQuaid, link:https://daily.bandcamp.com/label-profile/principe-records-feature[“Príncipe and the New Sound of Lisbon”], Bandcamp Daily (2016; accessed 2026-09-02):: Label profile quoting Príncipe co-founder José Moura on batida, tarraxo, and Afro-house, and documenting DJ Nervoso's stripped, percussion-led approach in Lisbon's Quinta do Mocho community.
+
+[[src-lycox]]
+Joseph Francis, link:https://djmag.com/features/recognise-092-dj-lycox[“Recognise: DJ Lycox”], DJ Mag (2025; accessed 2026-09-02):: Interview with the batida producer on learning to make kuduro, absorbing other electronic styles, and maintaining batida's community and history while developing new production methods.
 
 == Citation rules
 

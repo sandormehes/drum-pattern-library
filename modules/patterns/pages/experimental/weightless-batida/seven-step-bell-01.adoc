@@ -1,0 +1,64 @@
+= Seven-Step Bell Rotation 01
+:pattern-id: WB-136-005
+:family: Weightless–batida hybrid
+:region: Experimental / UK–Lisbon dialogue
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 134–138 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-mumdance-archive, src-principe-profile, src-lycox
+:tags: weightless, batida-informed, seven-step-cycle, bell, two-bar
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- ---x ---- | ---- x--- ---- --x-
+SNARE  | ---- ---- X--- ---- | ---- ---- X--- ----
+BELL   | x--- ---x ---- --x- | ---- -x-- ---- x---
+PERC   | --x- x--- -x-x ---- | x--x --x- x--- -x--
+SHAKER | -g-g -g-g -g-g -g-g | -g-g -g-g -g-g -g-g
+----
+
+== Character
+
+The bell repeats every seven sixteenths, so it crosses beats and the bar line before approaching its starting phase. A steadier half-step foundation makes the rotation audible without resolving it inside the two-bar excerpt.
+
+== Design device
+
+Rotation:: Bell events occur on absolute steps 1, 8, 15, 22, and 29.
+Continuity:: Ghost shakers preserve the full-tempo grid underneath the sparse foundation.
+Interlock:: Main percussion avoids the bell attacks.
+
+== Performance notes
+
+* Use one unmistakable bell timbre for every rotating event.
+* Keep the shaker almost subliminal; it is timing glue, not a lead layer.
+* Extend the pattern to seven bars if a full phase return is required.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original cross-cycle study; the seven-step rotation is a compositional device, not a claimed batida convention.
+References:: The xref:research:sources.adoc#src-mumdance-archive[Mumdance archive] provides experimental grime context; the xref:research:sources.adoc#src-principe-profile[Príncipe profile] and xref:research:sources.adoc#src-lycox[DJ Lycox interview] provide batida-specific context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:experimental/five-step-rotation-01.adoc[Five-Step Rotation 01]
+* xref:experimental/weightless-batida/ping-interlock-01.adoc[Ping Interlock 01]
+

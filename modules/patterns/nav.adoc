@@ -22,6 +22,13 @@
 *** xref:experimental/digital-dub-dropout-01.adoc[Digital-Dub Dropout 01]
 *** xref:experimental/breakbeat-mirror-01.adoc[Breakbeat Mirror 01]
 *** xref:experimental/interlocking-33334-01.adoc[Interlocking 3+3+3+3+4]
+*** xref:experimental/weightless-batida/index.adoc[Weightless × Batida Series]
+**** xref:experimental/weightless-batida/vacuum-batida-01.adoc[Vacuum Batida 01]
+**** xref:experimental/weightless-batida/ping-interlock-01.adoc[Ping Interlock 01]
+**** xref:experimental/weightless-batida/off-one-pressure-01.adoc[Off-One Pressure 01]
+**** xref:experimental/weightless-batida/locked-groove-erasure-01.adoc[Locked-Groove Erasure 01]
+**** xref:experimental/weightless-batida/seven-step-bell-01.adoc[Seven-Step Bell Rotation 01]
+**** xref:experimental/weightless-batida/cold-percussion-relay-01.adoc[Cold Percussion Relay 01]
 ** Hybrids
 *** xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica-UK Mutation 01]
 *** xref:hybrids/grime-batida-mutation-01.adoc[Grime-Batida Mutation 01]
