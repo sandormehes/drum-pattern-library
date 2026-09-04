@@ -1,0 +1,72 @@
+= Grime-Footwork-Batida Fracture 01
+:pattern-id: HY-150-003
+:family: Grime–footwork–batida hybrid
+:region: Experimental / UK–Chicago–Lisbon dialogue
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 148–154 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-plastician, src-principe-profile, src-lycox
+:tags: grime, footwork-informed, batida-informed, fractured, two-bar, 150-bpm
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--x -x-- --x- x--- | --x- x--- -x-- --x-
+SNARE  | ---- X--- ---- X--- | ---- --x- X--- ----
+CLAP   | ---- ---- ---- ---- | ---- X--- ---- --g-
+HAT    | x-xx -x-x xx-x -x-- | xx-x x--x -x-x xxx-
+PERC   | -x-- --x- x--g --x- | x--- -x-g --x- x---
+----
+
+== Character
+
+The fixed first-bar grime backbeat is broken open in bar two by a displaced snare and
+an uneven kick relay. Fast hats and dry percussion keep the surface agile, while the
+low drums leave enough negative space for a heavy bass answer.
+
+== Rhythmic roles
+
+Anchor:: Bar one makes the half-time grime reference audible before the pattern destabilizes it.
+Fracture:: Bar two moves the main snare a sixteenth late and removes the expected first kick.
+Velocity:: Hats use rapid, changing groupings rather than a repeating straight pulse.
+Interlock:: Percussion occupies gaps around the kicks, with ghost notes softening the joins.
+
+== Groove setting
+
+Tempo:: Start near 152 BPM; slow it slightly only if the kick relay loses definition.
+Timing:: Keep kicks and main snares dry and near-quantized. Push selected percussion a little late.
+Dynamics:: Make the bar-two clap a secondary flash, not a new backbeat.
+
+== Performance notes
+
+* Use a short kick with a distinct transient so the dense placements remain readable.
+* Change one percussion timbre each repeat; leave the event positions intact for several cycles.
+* Let bass sustain across one or two absent kick positions instead of doubling the full grid.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original hybrid study. Its rapid, non-repeating drum displacement is footwork-informed, but it is not a transcription or imitation of a particular artist or recording.
+References:: xref:research:sources.adoc#src-plastician[Plastician] supplies grime context; the xref:research:sources.adoc#src-principe-profile[Príncipe profile] and xref:research:sources.adoc#src-lycox[DJ Lycox interview] provide batida-specific context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:hybrids/grime-batida-mutation-01.adoc[Grime-Batida Mutation 01]
+* xref:experimental/weightless-batida/off-one-pressure-01.adoc[Off-One Pressure 01]

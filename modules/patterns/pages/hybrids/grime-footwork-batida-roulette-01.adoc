@@ -1,0 +1,73 @@
+= Grime-Footwork-Batida Roulette 01
+:pattern-id: HY-160-004
+:family: Grime–footwork–batida hybrid
+:region: Experimental / UK–Chicago–Lisbon dialogue
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 156–162 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-plastician, src-principe, src-lycox
+:tags: grime, footwork-informed, batida-informed, kick-relay, call-response, 160-bpm
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- --x- x--- -x-- | --x- x--x ---- x---
+SNARE  | ---- X--- ---- X--- | ---- X--- --x- ----
+RIM    | --x- ---- -x-- ---- | x--- ---- ---- -x--
+HAT    | x-x- xx-x x-xx -x-x | xx-x -x-x xxx- x--x
+PERC   | -x-g x--- --x- x--g | ---- -x-- x-g- --x-
+----
+
+== Character
+
+This faster study treats the kick lane as a two-bar call-and-response rather than a
+foundation that repeats every beat. A recognizable grime snare supplies the frame;
+rim and percussion replies make the rhythm feel circular and physical without resolving
+into a four-on-the-floor pattern.
+
+== Rhythmic roles
+
+Call:: The first bar spreads four kick attacks across the grid with room after each one.
+Response:: The second bar clusters its early kicks, then makes a late single attack answer the phrase.
+Frame:: The beat-two snare remains stable; the bar-two ghost snare adds friction without replacing it.
+Colour:: Rim and percussion trade short, contrasting responses around the low-drum events.
+
+== Groove setting
+
+Swing:: Apply a light 54–56% swing to hats, rim, and percussion only.
+Accent:: Treat the first kick in each bar as an arrival; all other kicks should be lighter.
+Space:: Use a compact room or slap delay on the rim, but leave snare and kick essentially dry.
+
+== Performance notes
+
+* At 160 BPM, program the hats at low velocity before adding more events.
+* Use pitched tom, woodblock, or synthetic conga sounds for the percussion lane.
+* For an arrangement change, mute the rim in bar one rather than adding a fill.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original hybrid study using fast kick displacement, a grime-derived backbeat, and percussion-led interlock. It does not reproduce a named footwork or batida composition.
+References:: xref:research:sources.adoc#src-plastician[Plastician] provides grime context; the xref:research:sources.adoc#src-principe[Príncipe catalogue] and xref:research:sources.adoc#src-lycox[DJ Lycox interview] provide batida listening and community context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:hybrids/grime-footwork-batida-fracture-01.adoc[Grime-Footwork-Batida Fracture 01]
+* xref:experimental/weightless-batida/cold-percussion-relay-01.adoc[Cold Percussion Relay 01]

@@ -32,3 +32,6 @@
 ** Hybrids
 *** xref:hybrids/jamaica-uk-mutation-01.adoc[Jamaica-UK Mutation 01]
 *** xref:hybrids/grime-batida-mutation-01.adoc[Grime-Batida Mutation 01]
+*** xref:hybrids/grime-footwork-batida-fracture-01.adoc[Grime-Footwork-Batida Fracture 01]
+*** xref:hybrids/grime-footwork-batida-roulette-01.adoc[Grime-Footwork-Batida Roulette 01]
+*** xref:hybrids/grime-footwork-batida-axis-01.adoc[Grime-Footwork-Batida Axis 01]

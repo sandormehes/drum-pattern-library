@@ -1,0 +1,72 @@
+= Grime-Footwork-Batida Axis 01
+:pattern-id: HY-154-005
+:family: Grime–footwork–batida hybrid
+:region: Experimental / UK–Chicago–Lisbon dialogue
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 150–156 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-plastician, src-principe-profile, src-lycox
+:tags: grime, footwork-informed, batida-informed, polyrhythm, bell, half-time, 154-bpm
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- -x-- ---x --x- | ---- x--- -x-- x---
+SNARE  | ---- X--- ---- X--- | ---- ---- X--- ----
+BELL   | x--- ---x --x- ---- | -x-- ---- x--- ---x
+HAT    | -x-x x-xx -x-x xx-x | x-xx -x-x xxx- -x-x
+PERC   | --x- x--- -x-g x--- | x--g --x- -x-- x-g-
+----
+
+== Character
+
+A stable grime half-time snare and a turning bell figure establish two different axes.
+The kick sequence changes its landing points across both bars, while the percussion
+threads the remaining gaps into a clipped, forward-moving dance layer.
+
+== Design device
+
+Backbeat:: The snare makes the fast tempo read in half-time.
+Rotation:: The bell is deliberately offset between bars, so it does not function as a fixed clap pattern.
+Displacement:: Kicks avoid a four-beat cycle and change their contour after the bar line.
+Interlock:: Percussion avoids direct unison with bell and kick attacks wherever possible.
+
+== Groove setting
+
+Timing:: Quantize the bell tightly; nudge only ghost percussion late.
+Dynamics:: Let the bell speak sharply but briefly. Keep its level below the snare.
+Variation:: On every fourth repeat, omit the final bell hit and let the pattern restart exposed.
+
+== Performance notes
+
+* A sine sub or short bass stab can answer the first and third kick attacks in each bar.
+* Use two contrasting percussion pitches to make the interlock easier to hear.
+* Avoid adding a second continuous shaker—the hats already provide the upper-grid glue.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original hybrid study. The footwork-informed element is fast, asymmetric low-drum design; the batida-informed element is the independent percussion interlock. No specific work or artist is transcribed or imitated.
+References:: xref:research:sources.adoc#src-plastician[Plastician] supplies grime context; the xref:research:sources.adoc#src-principe-profile[Príncipe profile] and xref:research:sources.adoc#src-lycox[DJ Lycox interview] provide batida-specific context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:hybrids/grime-footwork-batida-roulette-01.adoc[Grime-Footwork-Batida Roulette 01]
+* xref:experimental/weightless-batida/seven-step-bell-01.adoc[Seven-Step Bell Rotation 01]

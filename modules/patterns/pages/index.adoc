@@ -56,4 +56,10 @@ This focused xref:experimental/weightless-batida/index.adoc[six-pattern series] 
 
 * xref:hybrids/grime-batida-mutation-01.adoc[Grime-Batida Mutation 01] — 140 BPM half-time grime framework animated by interlocking batida-informed percussion.
 
+* xref:hybrids/grime-footwork-batida-fracture-01.adoc[Grime-Footwork-Batida Fracture 01] — a two-bar 152 BPM grime frame opened by rapid kick displacement and dry percussion interlock.
+
+* xref:hybrids/grime-footwork-batida-roulette-01.adoc[Grime-Footwork-Batida Roulette 01] — a 160 BPM kick call-and-response with stable grime snare landmarks.
+
+* xref:hybrids/grime-footwork-batida-axis-01.adoc[Grime-Footwork-Batida Axis 01] — a fast half-time study in turning bell phrases, displaced kicks, and clipped percussion.
+
 See xref:ROOT:notation.adoc[Notation] before contributing a pattern.
