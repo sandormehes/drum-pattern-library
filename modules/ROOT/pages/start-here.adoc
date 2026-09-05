@@ -1,0 +1,30 @@
+= Start Here
+:description: A short route into the Drum Pattern Library for producers and curious listeners.
+
+Use this six-pattern route to learn the collection from stable rhythmic foundations to deliberate transformation. Program the grids with neutral sounds first; the aim is to hear placement and space before choosing samples.
+
+== 1. Feel the missing downbeat
+
+xref:patterns:jamaica/one-drop-reggae-01.adoc[One-Drop Reggae Study 01] puts its structural weight on beat three. It is the best introduction to the library's attention to absence as an active musical choice.
+
+== 2. Turn space into forward motion
+
+xref:patterns:jamaica/steppers-dub-01.adoc[Steppers Dub 01] makes the kick continuous while retaining the roomy, sound-system-oriented frame. Compare it directly with the one-drop study.
+
+== 3. Hear the machine-pattern economy
+
+xref:patterns:jamaica/sleng-teng-digital-study-01.adoc[Sleng Teng Digital Study 01] reduces the rhythmic identity to a compact drum-machine loop. Change the sounds without moving the events and notice what remains.
+
+== 4. Displace the dancefloor expectation
+
+xref:patterns:garage/ukg-two-step-01.adoc[UK Garage Two-Step 01] keeps the backbeat but interrupts the kick's predictability. It is a practical bridge from the Jamaican studies into UK club rhythm.
+
+== 5. Make a fast tempo feel spacious
+
+xref:patterns:dubstep/dubstep-halfstep-01.adoc[Dubstep Half-Step 01] shows how a 140 BPM frame can remain open enough for bass and vocal phrases.
+
+== 6. Follow a mutation
+
+xref:patterns:hybrids/jamaica-uk-mutation-01.adoc[Jamaica-UK Mutation 01] makes its relationship to a parent pattern explicit. Use it as the model for creating an original variation without presenting it as historical transcription.
+
+Next, follow the xref:research:jamaica-uk-lineage.adoc[Jamaica–UK listening path] for context, or xref:browse.adoc[browse the full collection] by your next musical need.

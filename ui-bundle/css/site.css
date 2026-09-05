@@ -1,0 +1,51 @@
+:root {
+  color: #1d2939;
+  background: #f7f8fa;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+.site-shell { margin: 0 auto; max-width: 72rem; padding-left: 1.5rem; padding-right: 1.5rem; }
+
+.site-header { background: #102a43; border-bottom: 4px solid #d97706; color: #fff; }
+
+.site-header__inner { align-items: center; display: flex; gap: 1.5rem; justify-content: space-between; min-height: 4.5rem; }
+
+.site-brand { color: #fff; font-size: 1.1rem; font-weight: 750; letter-spacing: .01em; text-decoration: none; }
+
+.site-links { display: flex; gap: 1.1rem; }
+
+.site-links a { color: #d9e2ec; font-size: .94rem; text-decoration: none; }
+.site-links a:hover { color: #fff; text-decoration: underline; }
+
+.site-main { min-height: calc(100vh - 10rem); padding-bottom: 3rem; padding-top: 2.5rem; }
+
+.doc { background: #fff; border: 1px solid #e4e7ec; border-radius: .6rem; box-shadow: 0 2px 8px rgb(16 24 40 / 4%); padding: clamp(1.5rem, 4vw, 3.5rem); }
+
+.doc > :first-child { margin-top: 0; }
+.doc h1, .doc h2, .doc h3 { color: #102a43; line-height: 1.2; }
+.doc h1 { font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.03em; }
+.doc h2 { border-bottom: 1px solid #e4e7ec; margin-top: 2.5rem; padding-bottom: .45rem; }
+.doc a { color: #0b6e99; }
+.doc a:hover { color: #07516f; }
+.doc code { background: #f2f4f7; border-radius: .2rem; padding: .1rem .28rem; }
+.doc table { border-collapse: collapse; max-width: 100%; width: 100%; }
+.doc th, .doc td { border: 1px solid #d9dee6; padding: .55rem .7rem; text-align: left; vertical-align: top; }
+.doc th { background: #f5f7fa; }
+.doc .ulist { margin-bottom: 1rem; }
+
+.page-turns { display: flex; gap: 1rem; justify-content: space-between; margin-top: 1.5rem; }
+.page-turns a { color: #0b6e99; font-weight: 650; text-decoration: none; }
+
+.site-footer { border-top: 1px solid #d9dee6; color: #667085; font-size: .88rem; padding: 1.5rem 0; }
+
+@media (max-width: 560px) {
+  .site-header__inner { align-items: flex-start; flex-direction: column; gap: .35rem; padding-bottom: 1rem; padding-top: 1rem; }
+  .site-main { padding-left: .75rem; padding-right: .75rem; padding-top: 1rem; }
+  .site-shell { padding-left: 1rem; padding-right: 1rem; }
+  .page-turns { flex-direction: column; }
+}

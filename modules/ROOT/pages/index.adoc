@@ -3,9 +3,13 @@
 
 This library collects drum patterns as plain-text AsciiDoc pages. Each entry combines a compact step grid with musical context, performance notes, and provenance.
 
+New here? Follow xref:start-here.adoc[Start Here] for a short producer-oriented route, or use xref:browse.adoc[Browse] to find a pattern by feel, tempo, origin, or source type.
+
 == Browse the library
 
 * xref:patterns:index.adoc[Pattern library] — playable patterns organized by family.
+* xref:start-here.adoc[Start Here] — six patterns that introduce the collection in a useful order.
+* xref:browse.adoc[Browse] — entry points by rhythmic character, tempo, geography, and provenance.
 * xref:notation.adoc[Notation] — symbols, grid rules, and an example.
 * xref:methodology.adoc[Methodology] — how patterns are researched, documented, and reviewed.
 * xref:research:index.adoc[Research] — sources and broader rhythmic context.

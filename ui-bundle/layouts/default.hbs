@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{#if page.description}}{{page.description}}{{else}}Readable, version-controlled drum patterns.{{/if}}">
+  <title>{{page.title}} | {{site.title}}</title>
+  {{> head-styles}}
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-shell site-header__inner">
+      <a class="site-brand" href="{{relativize site.homeUrl}}">{{site.title}}</a>
+      <nav class="site-links" aria-label="Primary">
+        <a href="{{relativize site.homeUrl}}">Home</a>
+        <a href="{{relativize (resolvePageURL 'ROOT:start-here.adoc')}}">Start here</a>
+        <a href="{{relativize (resolvePageURL 'ROOT:browse.adoc')}}">Browse</a>
+      </nav>
+    </div>
+  </header>
+  <main class="site-shell site-main">
+    <article class="doc">
+      <h1>{{page.title}}</h1>
+      {{{page.contents}}}
+    </article>
+    {{#if page.previous}}
+    <nav class="page-turns" aria-label="Pattern navigation">
+      <a href="{{relativize page.previous.url}}">← {{page.previous.content}}</a>
+      {{#if page.next}}<a href="{{relativize page.next.url}}">{{page.next.content}} →</a>{{/if}}
+    </nav>
+    {{else}}
+      {{#if page.next}}<nav class="page-turns" aria-label="Pattern navigation"><a href="{{relativize page.next.url}}">{{page.next.content}} →</a></nav>{{/if}}
+    {{/if}}
+  </main>
+  <footer class="site-footer"><div class="site-shell">A readable, version-controlled drum-pattern library.</div></footer>
+</body>
+</html>

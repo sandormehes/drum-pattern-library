@@ -1,0 +1,31 @@
+= Browse the Library
+:description: Find drum patterns by feel, tempo, geography, and provenance.
+
+This is a set of practical entry points into the library. Every pattern page also records its complete metadata, source type, confidence, and tags.
+
+== By rhythmic character
+
+Spacious and bass-led:: xref:patterns:jamaica/one-drop-reggae-01.adoc[One-Drop Reggae], xref:patterns:dubstep/dubstep-halfstep-01.adoc[Dubstep Half-Step], and xref:patterns:experimental/weightless-batida/vacuum-batida-01.adoc[Vacuum Batida].
+Propulsive and floor-focused:: xref:patterns:jamaica/steppers-dub-01.adoc[Steppers Dub], xref:patterns:electro/electroid-909-01.adoc[Electroid 909], and xref:patterns:hybrids/grime-footwork-batida-roulette-01.adoc[Grime-Footwork-Batida Roulette].
+Broken or shuffled:: xref:patterns:garage/ukg-two-step-01.adoc[UK Garage Two-Step], xref:patterns:jungle/jungle-break-study-01.adoc[Jungle Break Study], and xref:patterns:experimental/breakbeat-mirror-01.adoc[Breakbeat Mirror].
+Percussion-forward:: the xref:patterns:experimental/weightless-batida/index.adoc[Weightless × Batida series] and xref:patterns:hybrids/grime-batida-mutation-01.adoc[Grime-Batida Mutation].
+
+== By tempo range
+
+70–102 BPM:: xref:patterns:jamaica/one-drop-reggae-01.adoc[One-Drop Reggae], xref:patterns:jamaica/rockers-reggae-01.adoc[Rockers Reggae], xref:patterns:jamaica/steppers-dub-01.adoc[Steppers Dub], and xref:patterns:jamaica/sleng-teng-digital-study-01.adoc[Sleng Teng Digital Study].
+120–142 BPM:: xref:patterns:grime/grime-130-03.adoc[Grime 130], xref:patterns:electro/electroid-909-01.adoc[Electroid 909], xref:patterns:dubstep/dubstep-halfstep-01.adoc[Dubstep Half-Step], and the xref:patterns:experimental/weightless-batida/index.adoc[Weightless × Batida series].
+150 BPM and above:: xref:patterns:garage/ukg-two-step-01.adoc[UK Garage Two-Step], xref:patterns:jungle/jungle-break-study-01.adoc[Jungle Break Study], and the xref:patterns:hybrids/grime-footwork-batida-fracture-01.adoc[three Grime-Footwork-Batida studies].
+
+== By lineage and origin
+
+Jamaica:: Begin with the five xref:patterns:index.adoc#jamaica[Jamaican studies], spanning one-drop, rockers, dub, and digital dancehall.
+UK sound-system continuities:: xref:research:jamaica-uk-lineage.adoc[Follow the Jamaica–UK listening path] through jungle, garage, grime, and dubstep.
+Original cross-pollination:: Explore xref:patterns:hybrids/jamaica-uk-mutation-01.adoc[Jamaica-UK Mutation] and the xref:patterns:experimental/weightless-batida/index.adoc[Weightless × Batida series].
+
+== By provenance
+
+Contextual educational studies:: Historical family pages identify their listening references and confidence level without claiming to reproduce a single recording.
+Original studies:: The xref:patterns:index.adoc#experimental[experimental collection] and xref:patterns:index.adoc#hybrids[hybrids] state their design sources plainly and distinguish them from transcriptions.
+Documented mutations:: xref:patterns:hybrids/jamaica-uk-mutation-01.adoc[Jamaica-UK Mutation], xref:patterns:experimental/digital-dub-dropout-01.adoc[Digital-Dub Dropout], and xref:patterns:experimental/breakbeat-mirror-01.adoc[Breakbeat Mirror] explicitly name their parent pattern.
+
+For symbols and grid conventions, see xref:notation.adoc[Notation]. For the rules behind these distinctions, see xref:methodology.adoc[Methodology].

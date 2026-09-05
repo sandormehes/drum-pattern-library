@@ -1,6 +1,6 @@
 = Drum Pattern Library
 
-A human-readable, Git-friendly drum-pattern library built with AsciiDoc and Antora.
+A human-readable, Git-friendly drum-pattern library built with AsciiDoc and Antora. Version 0.2 adds a self-contained site theme, a guided entry point, and browse paths by feel, tempo, origin, and pattern type.
 
 == Preview locally
 
@@ -14,7 +14,7 @@ npm run check
 
 Open `build/site/index.html` in a browser.
 
-The check command validates every pattern's step count and symbols before building the site.
+The check command validates pattern metadata, source references, step counts, and symbols before building the site. The UI bundle lives in this repository, so building the site does not depend on downloading a remote theme.
 
 == Add a pattern
 
