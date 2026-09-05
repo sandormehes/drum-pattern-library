@@ -44,4 +44,8 @@ The symbols after the track label are the canonical pattern data. Use readable u
 
 The grid describes the rhythmic skeleton, not every performance detail. Record swing, microtiming, velocity, and articulation in a pattern's metadata or performance notes. This keeps the step data simple while preserving the character of the groove.
 
+== Playback
+
+Each published grid has a *Play pattern* control. It uses neutral synthesized drum sounds in the browser, so it is useful for hearing placement rather than reproducing a record or prescribing samples. Set tempo and sixteenth-note swing with the sliders; playback loops until *Stop playback* is selected.
+
 For meters or subdivisions that do not fit a 16-step grid, state the meter and subdivision explicitly and retain the same rule: one character per step, grouped by beat.

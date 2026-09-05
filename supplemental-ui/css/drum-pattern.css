@@ -9,6 +9,42 @@
   overflow-x: auto;
 }
 
+.drum-pattern-player {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.1rem;
+  margin-bottom: .65rem;
+}
+
+.drum-pattern-play {
+  background: #102a43;
+  border: 0;
+  border-radius: .3rem;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 650;
+  padding: .48rem .8rem;
+}
+
+.drum-pattern-play:hover { background: #0b6e99; }
+.drum-pattern-play:focus-visible, .drum-pattern-tempo input:focus-visible { outline: 3px solid #f6ad55; outline-offset: 2px; }
+
+.drum-pattern-tempo,
+.drum-pattern-swing {
+  align-items: center;
+  color: #344054;
+  display: flex;
+  font-size: .88rem;
+  gap: .45rem;
+}
+
+.drum-pattern-tempo input,
+.drum-pattern-swing input { accent-color: #0b6e99; width: 6.5rem; }
+.drum-pattern-tempo output,
+.drum-pattern-swing output { color: #475467; font-variant-numeric: tabular-nums; min-width: 3.9rem; }
+
 .drum-pattern table {
   border-collapse: collapse;
   font-family: "Roboto Mono", monospace;
@@ -111,6 +147,11 @@
   font-size: 0.9rem;
 }
 
+.drum-pattern td.is-playing {
+  background: #fff3cd !important;
+  box-shadow: inset 0 -3px 0 #d97706;
+}
+
 .drum-pattern-legend {
   color: #5c6675;
   display: flex;
@@ -139,4 +180,6 @@
   .drum-pattern td {
     height: 2rem;
   }
+
+  .drum-pattern-player { align-items: flex-start; flex-direction: column; gap: .55rem; }
 }
