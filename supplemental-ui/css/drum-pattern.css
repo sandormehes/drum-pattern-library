@@ -201,7 +201,7 @@
 }
 
 @media print {
-  .site-header, .site-footer, .page-turns, .drum-pattern-player { display: none; }
+  .site-header, .site-footer, .site-sidebar, .breadcrumbs, .page-turns, .drum-pattern-player { display: none; }
   .site-main, .site-shell, .doc { margin: 0; max-width: none; padding: 0; }
   .doc { border: 0; box-shadow: none; }
   .drum-pattern-scroll { overflow: visible; }

@@ -7,22 +7,48 @@
   <title>{{page.title}} | {{site.title}}</title>
   {{> head-styles}}
 </head>
-<body>
+<body data-pattern-index="{{relativize (resolvePageURL 'patterns:index.adoc')}}">
   <header class="site-header">
     <div class="site-shell site-header__inner">
       <a class="site-brand" href="{{relativize site.homeUrl}}">{{site.title}}</a>
       <nav class="site-links" aria-label="Primary">
-        <a href="{{relativize site.homeUrl}}">Home</a>
-        <a href="{{relativize (resolvePageURL 'ROOT:start-here.adoc')}}">Start here</a>
-        <a href="{{relativize (resolvePageURL 'ROOT:browse.adoc')}}">Browse</a>
+        <a href="{{relativize (resolvePageURL 'patterns:index.adoc')}}">Explore patterns</a>
+        <a href="{{relativize (resolvePageURL 'ROOT:start-here.adoc')}}">Learn</a>
+        <a href="{{relativize (resolvePageURL 'ROOT:contributing.adoc')}}">Contribute</a>
       </nav>
+      <form class="site-search" data-site-search role="search">
+        <label class="visually-hidden" for="pattern-search">Search patterns</label>
+        <input id="pattern-search" type="search" autocomplete="off" placeholder="Search patterns" aria-controls="pattern-search-results">
+        <ul id="pattern-search-results" class="search-results" hidden></ul>
+      </form>
     </div>
   </header>
   <main class="site-shell site-main">
-    <article class="doc">
-      <h1>{{page.title}}</h1>
-      {{{page.contents}}}
-    </article>
+    <div class="site-layout">
+      <aside class="site-sidebar">
+        <details open>
+          <summary>Library menu</summary>
+          <nav aria-label="Library navigation">
+            {{#each page.navigation}}
+              {{> nav-tree items=items}}
+            {{/each}}
+          </nav>
+        </details>
+      </aside>
+      <div class="site-content">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="{{relativize site.homeUrl}}">Home</a>
+          {{#each page.breadcrumbs}}
+            <span aria-hidden="true">/</span>
+            {{#if url}}<a href="{{relativize url}}" {{#if (isCurrent url)}}aria-current="page"{{/if}}>{{content}}</a>{{else}}<span>{{content}}</span>{{/if}}
+          {{/each}}
+        </nav>
+        <article class="doc">
+          <h1>{{page.title}}</h1>
+          {{{page.contents}}}
+        </article>
+      </div>
+    </div>
     {{#if page.previous}}
     <nav class="page-turns" aria-label="Pattern navigation">
       <a href="{{relativize page.previous.url}}">← {{page.previous.content}}</a>

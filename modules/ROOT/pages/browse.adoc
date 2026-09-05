@@ -3,6 +3,24 @@
 
 This is a set of practical entry points into the library. Every pattern page also records its complete metadata, source type, confidence, and tags.
 
+== Filter the collection
+
+++++
+<section class="pattern-filters" data-pattern-browser aria-label="Pattern filters">
+  <div class="pattern-filters__controls">
+    <label>Search <input type="search" data-filter-query placeholder="Title, ID, or tag"></label>
+    <label>Family <select data-filter-family><option value="">All families</option></select></label>
+    <label>Region <select data-filter-region><option value="">All regions</option></select></label>
+    <label>Type <select data-filter-source-type><option value="">All types</option></select></label>
+    <label>Bars <select data-filter-bars><option value="">Any length</option><option value="1">One bar</option><option value="2">Two bars</option></select></label>
+    <label>Tempo <select data-filter-tempo><option value="">All tempos</option><option value="slow">Under 110 BPM</option><option value="mid">110–149 BPM</option><option value="fast">150 BPM and above</option></select></label>
+    <label>Feel / tag <select data-filter-tag><option value="">All tags</option></select></label>
+  </div>
+  <p data-filter-status>Loading patterns…</p>
+  <ul class="pattern-filter-results"></ul>
+</section>
+++++
+
 == By rhythmic character
 
 Spacious and bass-led:: xref:patterns:jamaica/one-drop-reggae-01.adoc[One-Drop Reggae], xref:patterns:dubstep/dubstep-halfstep-01.adoc[Dubstep Half-Step], and xref:patterns:experimental/weightless-batida/vacuum-batida-01.adoc[Vacuum Batida].

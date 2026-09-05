@@ -1,6 +1,6 @@
 = Drum Pattern Library
 
-A human-readable, Git-friendly drum-pattern library built with AsciiDoc and Antora. Version 1.0 establishes a contributor workflow with a reusable template, documented review standard, stronger validation, and a repeatable release process.
+A human-readable, Git-friendly drum-pattern library built with AsciiDoc and Antora. Version 1.1 adds a responsive library navigation, searchable pattern index, and live Browse filters alongside the contributor workflow, playback, and export tools.
 
 == Preview locally
 

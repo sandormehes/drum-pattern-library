@@ -1,0 +1,12 @@
+<ul class="nav-tree">
+{{#each items}}
+  <li>
+    {{#if url}}
+      <a href="{{relativize url}}" {{#if (isCurrent url)}}aria-current="page"{{/if}}>{{content}}</a>
+    {{else}}
+      <span class="nav-tree__label">{{content}}</span>
+    {{/if}}
+    {{#if items}}{{> nav-tree items=items}}{{/if}}
+  </li>
+{{/each}}
+</ul>
