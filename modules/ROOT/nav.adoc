@@ -1,5 +1,6 @@
 * xref:index.adoc[Home]
 * xref:start-here.adoc[Start Here]
 * xref:browse.adoc[Browse]
+* xref:contributing.adoc[Contributing]
 * xref:notation.adoc[Notation]
 * xref:methodology.adoc[Methodology]

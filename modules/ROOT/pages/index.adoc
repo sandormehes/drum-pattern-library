@@ -10,6 +10,7 @@ New here? Follow xref:start-here.adoc[Start Here] for a short producer-oriented 
 * xref:patterns:index.adoc[Pattern library] — playable patterns organized by family.
 * xref:start-here.adoc[Start Here] — six patterns that introduce the collection in a useful order.
 * xref:browse.adoc[Browse] — entry points by rhythmic character, tempo, geography, and provenance.
+* xref:contributing.adoc[Contributing] — the template, review standard, and release workflow.
 * xref:notation.adoc[Notation] — symbols, grid rules, and an example.
 * xref:methodology.adoc[Methodology] — how patterns are researched, documented, and reviewed.
 * xref:research:index.adoc[Research] — sources and broader rhythmic context.

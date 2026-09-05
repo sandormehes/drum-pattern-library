@@ -1,0 +1,53 @@
+= [Family] Study 01
+:pattern-id: XX-000-001
+:family: [Family]
+:region: [Place or dialogue]
+:era: [Era or contemporary study]
+:meter: 4/4
+:subdivision: 1/16
+:bars: 1
+:tempo: [Range] BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-example
+:tags: [comma-separated, lowercase tags]
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bar(s)
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- ---- ----
+SNARE  | ---- X--- ---- X---
+HI-HAT | x-x- x-x- x-x- x-x-
+----
+
+== Character
+
+Describe the rhythmic identity in two or three sentences. State what the grid makes audible without claiming more than the evidence supports.
+
+== Performance notes
+
+* Give a practical note about timing, velocity, articulation, or space.
+* Keep sample choice optional and avoid prescriptive sound design.
+
+== Provenance
+
+Type:: {source-type}
+Source:: State whether this is original, a transcription, an adaptation, or a traditional study. Name a recording only when the page is actually based on it.
+References:: Replace `src-example` with anchors from `modules/research/pages/sources.adoc`, then explain how each supports context or evidence.
+Confidence:: {confidence}
+
+== Related patterns
+
+* Add at least one useful comparison or remove this placeholder only after adding a real related-pattern link.

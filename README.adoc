@@ -1,6 +1,6 @@
 = Drum Pattern Library
 
-A human-readable, Git-friendly drum-pattern library built with AsciiDoc and Antora. Version 0.5 broadens the standalone family studies and adds structured learning paths alongside playback, export, and browsing tools.
+A human-readable, Git-friendly drum-pattern library built with AsciiDoc and Antora. Version 1.0 establishes a contributor workflow with a reusable template, documented review standard, stronger validation, and a repeatable release process.
 
 == Preview locally
 
@@ -18,14 +18,13 @@ The check command validates pattern metadata, source references, step counts, an
 
 Published pattern pages include browser-native playback with adjustable tempo and swing, General MIDI export, copyable canonical grid data, and a print-friendly practice view. No audio files or third-party playback service are required.
 
-== Add a pattern
+== Contribute a pattern
 
-. Copy one of the pages in `modules/patterns/pages/`.
-. Give it a stable ID and filename.
-. Keep every track on its own line so changes remain clear in Git diffs.
-. Add the new page to `modules/patterns/nav.adoc`.
+. Copy `templates/pattern-study.adoc` into the appropriate `modules/patterns/pages/` family folder.
+. Give it a stable ID and filename, then add it to `modules/patterns/nav.adoc`.
+. Run `npm run check` before opening a pull request.
 
-The complete notation and authoring rules are in the generated site under _Notation_ and _Methodology_.
+The complete authoring and review workflow is in `CONTRIBUTING.adoc` and in the published xref:contributing.adoc[Contributing] page.
 
 == Publish on GitHub Pages
 

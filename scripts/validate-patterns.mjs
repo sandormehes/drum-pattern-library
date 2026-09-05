@@ -9,6 +9,7 @@ const requiredAttributes = [
 ]
 const validSourceTypes = new Set(['Original', 'Transcription', 'Adaptation', 'Traditional'])
 const validConfidence = new Set(['High', 'Medium', 'Low'])
+const requiredSections = ['Pattern', 'Character', 'Performance notes', 'Provenance', 'Related patterns']
 const sourceRegister = await readFile(path.resolve('modules/research/pages/sources.adoc'), 'utf8')
 const registeredSourceIds = new Set([...sourceRegister.matchAll(/^\[\[([^\]]+)\]\]$/gm)].map((match) => match[1]))
 
@@ -23,6 +24,7 @@ async function findAsciiDocFiles(directory) {
 
 let checkedPatterns = 0
 const patternIds = new Map()
+const patternRecords = []
 
 for (const file of await findAsciiDocFiles(pagesRoot)) {
   const source = await readFile(file, 'utf8')
@@ -38,6 +40,7 @@ for (const file of await findAsciiDocFiles(pagesRoot)) {
     throw new Error(`${file}: duplicate pattern ID ${attributes['pattern-id']} (also in ${patternIds.get(attributes['pattern-id'])})`)
   }
   patternIds.set(attributes['pattern-id'], file)
+  patternRecords.push({ attributes, file, source })
 
   if (!validSourceTypes.has(attributes['source-type'])) {
     throw new Error(`${file}: invalid source type ${attributes['source-type']}`)
@@ -55,6 +58,14 @@ for (const file of await findAsciiDocFiles(pagesRoot)) {
     if (!registeredSourceIds.has(sourceId)) {
       throw new Error(`${file}: source reference ${sourceId} is not registered in modules/research/pages/sources.adoc`)
     }
+  }
+
+  for (const section of requiredSections) {
+    if (!source.includes(`== ${section}\n`)) throw new Error(`${file}: missing ${section} section`)
+  }
+  const relatedPatterns = source.match(/== Related patterns\n([\s\S]*?)(?=\n== |\s*$)/)?.[1]
+  if (!relatedPatterns?.includes('xref:')) {
+    throw new Error(`${file}: Related patterns section must link to at least one pattern`)
   }
 
   const patternSection = source.match(/== Pattern\n([\s\S]*?)(?=\n== )/)?.[1]
@@ -81,4 +92,11 @@ for (const file of await findAsciiDocFiles(pagesRoot)) {
   checkedPatterns += 1
 }
 
-console.log(`Validated ${checkedPatterns} patterns.`)
+for (const { attributes, file } of patternRecords) {
+  const parentPattern = attributes['parent-pattern']
+  if (parentPattern && !patternIds.has(parentPattern)) {
+    throw new Error(`${file}: parent pattern ${parentPattern} does not match a registered pattern ID`)
+  }
+}
+
+console.log(`Validated ${checkedPatterns} patterns, including metadata, source references, required review sections, and parent links.`)

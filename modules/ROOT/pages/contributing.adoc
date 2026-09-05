@@ -1,0 +1,27 @@
+= Contributing
+:description: The authoring template, review standard, and release workflow for the Drum Pattern Library.
+
+The library is designed for useful, reviewable contributions. A compact grid is not a substitute for a whole performance, so every page separates its pattern data, performance advice, and provenance.
+
+== Start from the template
+
+Copy `templates/pattern-study.adoc` into the appropriate family folder in `modules/patterns/pages/`. The template supplies the required metadata and review sections. Replace each placeholder, especially `src-example`, before committing.
+
+== What the automated check covers
+
+`npm run check` validates each pattern's metadata, source-register references, step count, permitted symbols, required review sections, and any `parent-pattern` relationship. It then builds the complete published site.
+
+== Human review
+
+Reviewers look for a distinct musical contribution, clear prose, accurate provenance language, and a change that is easy to follow in Git. Do not call an original reduction a transcription, and do not let a reference imply that a grid copies a particular recording when it does not.
+
+== Before you open a pull request
+
+. Add the page to the pattern navigation and index.
+. Add any new research source to the source register.
+. Run `npm run check`.
+. Explain the musical device, provenance type, and related patterns in the pull request description.
+
+== Releasing
+
+The project uses semantic versions and annotated `vX.Y.Z` tags. A release starts from a green `npm run check`, includes a user-facing note, and is published by pushing `main` and its tag. The complete repository workflow is in `CONTRIBUTING.adoc`.

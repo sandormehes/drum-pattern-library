@@ -1,0 +1,40 @@
+= Contributing to Drum Pattern Library
+
+Thank you for adding a pattern, correction, source, or learning path. The library values musical usefulness and traceable context over pretending that a compact grid can capture every performance detail.
+
+== Before you write
+
+. Read `modules/ROOT/pages/notation.adoc` and `modules/ROOT/pages/methodology.adoc`.
+. Search the library for a close pattern before creating a duplicate.
+. Choose one provenance type: `Original`, `Transcription`, `Adaptation`, or `Traditional`.
+. For historical or contextual claims, add a registered source before referring to it from a pattern.
+
+== Add a pattern
+
+. Copy `templates/pattern-study.adoc` to the appropriate folder under `modules/patterns/pages/`.
+. Replace every placeholder, including `src-example`, before committing.
+. Keep a track on one source line and group it in blocks of four steps.
+. Add the page to both `modules/patterns/nav.adoc` and `modules/patterns/pages/index.adoc`.
+. Run `npm run check`.
+
+== Review standard
+
+A proposed pattern is ready for review when:
+
+* its ID is unique and its metadata is complete;
+* every source reference resolves in the source register;
+* its step count matches its bar count;
+* it has `Pattern`, `Character`, `Performance notes`, `Provenance`, and `Related patterns` sections;
+* any parent pattern named by `parent-pattern` exists in the collection;
+* factual claims are sourced and interpretation is labeled as interpretation; and
+* the change is small enough to read in a Git diff.
+
+The validation script enforces the structural items. A reviewer checks musical clarity, provenance language, and whether the proposed pattern contributes something distinct.
+
+== Release process
+
+. Run `npm run check` on a clean working tree.
+. Update the package version and lockfile using semantic versioning.
+. Summarize user-facing changes in the release note.
+. Commit the release, create an annotated tag in the form `vX.Y.Z`, and push both `main` and the tag.
+. Confirm that the GitHub Pages workflow completes successfully.
