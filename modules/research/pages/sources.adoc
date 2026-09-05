@@ -42,6 +42,9 @@ Plastician, link:https://daily.redbullmusicacademy.com/2017/01/plastician-featur
 [[src-wiley]]
 Wiley, “Eskimo,” _Eskimo_ EP (Wiley Kat Records, 2002):: Listening reference for sparse early grime rhythm and timbre. Library grids that cite it are independent studies, not transcriptions.
 
+[[src-rp-boo]]
+Library of Congress, link:https://www.loc.gov/resource/afc2022012.afc2022012_016_ms001/[“Follow The Music Interview: RP Boo”] (recorded 2023; accessed 2026-09-05):: Oral-history interview with Chicago DJ, dancer, and producer RP Boo. Used as context for footwork's dance, DJ, and producer community; no library grid transcribes his work.
+
 == Experimental continuities
 
 [[src-weightless]]

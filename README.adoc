@@ -1,6 +1,6 @@
 = Drum Pattern Library
 
-A human-readable, Git-friendly drum-pattern library built with AsciiDoc and Antora. Version 0.4 adds MIDI export, copyable pattern grids, and print-friendly practice pages alongside in-browser playback and browsing tools.
+A human-readable, Git-friendly drum-pattern library built with AsciiDoc and Antora. Version 0.5 broadens the standalone family studies and adds structured learning paths alongside playback, export, and browsing tools.
 
 == Preview locally
 

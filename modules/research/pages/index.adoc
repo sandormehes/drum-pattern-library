@@ -12,3 +12,5 @@ This module holds historical context, listening notes, rhythmic analysis, and ot
 Start with the xref:sources.adoc[source register].
 
 The xref:jamaica-uk-lineage.adoc[Jamaica–UK listening path] offers a guided route through the starter collection while keeping direct evidence separate from interpretive connections.
+
+For hands-on work, use the xref:production-paths.adoc[production learning paths]. Each route has a focused rhythmic question and ends with an original variation exercise.

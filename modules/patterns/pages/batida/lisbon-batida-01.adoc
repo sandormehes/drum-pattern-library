@@ -1,0 +1,63 @@
+= Lisbon Batida Study 01
+:pattern-id: BT-140-001
+:family: Batida
+:region: Lisbon, Portugal
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 136–142 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-principe-profile, src-lycox
+:tags: batida, lisbon, percussion-led, interlocking, two-bar, original-study
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- --x- ---- | ---- -x-- ---- X---
+SNARE  | ---- X--- ---- ---- | X--- ---- --g- ----
+PERC A | -x-- --x- x--- -x-- | --x- x--- -x-- --x-
+PERC B | ---x x--- --x- ---x | x--- ---x x--- -x--
+METAL  | ---- ---- o--- ---- | ---- ---x ---- ----
+----
+
+== Character
+
+An original percussion-first study in which the low drum changes position between bars while the two percussion lanes sustain motion. The metal lane supplies occasional scale without becoming a timekeeping part.
+
+== Rhythmic roles
+
+Foundation:: Kicks are infrequent enough that the loop is not defined by a conventional low-drum pulse.
+Interlock:: Percussion lanes alternate density so one can retreat as the other becomes active.
+Colour:: Metal arrives as an event with a tail, not a cymbal pattern.
+
+== Performance notes
+
+* Keep the percussion tones distinct in pitch or material: wood, skin, and metal work well.
+* Do not quantize all lanes to identical velocity; make the reply notes softer.
+* On every fourth pass, omit the final kick and let PERC B carry the return.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original educational study. It does not transcribe or imitate a particular Lisbon batida recording or producer.
+References:: xref:research:sources.adoc#src-principe-profile[Príncipe profile] and xref:research:sources.adoc#src-lycox[DJ Lycox interview] provide regional and production context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:experimental/weightless-batida/vacuum-batida-01.adoc[Vacuum Batida 01]
+* xref:hybrids/grime-batida-mutation-01.adoc[Grime-Batida Mutation 01]

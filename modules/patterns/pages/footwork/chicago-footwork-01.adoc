@@ -1,0 +1,63 @@
+= Chicago Footwork Study 01
+:pattern-id: FW-160-001
+:family: Footwork
+:region: Chicago, United States
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 158–164 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-rp-boo
+:tags: footwork, chicago, fast, kick-relay, two-bar, original-study
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- --x- -x-- ---x | --x- X--- ---x -x--
+SNARE  | ---- X--- ---- X--- | ---- X--- --g- X---
+CLAP   | ---- ---- ---- ---- | ---- ---- X--- ----
+HAT    | x-xx x-x- xx-x x-xx | xx-x x-xx x-x- xxx-
+PERC   | --x- ---- -x-- --x- | -x-- --x- ---- x--g
+----
+
+== Character
+
+A fast, two-bar original study whose kick placement changes often enough to invite a physical answer rather than establish a single four-beat formula. The repeating snare landmarks keep the loop legible while hats and percussion make the surface flicker.
+
+== Rhythmic roles
+
+Relay:: The kick is a sequence of short answers, not a bass drum ostinato.
+Landmarks:: The snare provides a stable point of return across the two bars.
+Pressure:: Bar two uses an accented first kick, then removes low-drum weight before the last response.
+
+== Performance notes
+
+* Begin at 160 BPM and reduce layers before reducing the tempo.
+* Keep the kick dry and very short; let a separate bass part create longer movement.
+* Make the clap in bar two an interruption, not a replacement for the snare.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original educational study. It does not transcribe, imitate, or stand in for a particular Chicago footwork recording.
+References:: xref:research:sources.adoc#src-rp-boo[Library of Congress interview with RP Boo] provides scene context for the footwork label and its dance-rooted practice.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:hybrids/grime-footwork-batida-fracture-01.adoc[Grime-Footwork-Batida Fracture 01]
+* xref:hybrids/grime-footwork-batida-roulette-01.adoc[Grime-Footwork-Batida Roulette 01]

@@ -30,6 +30,14 @@ Patterns are grouped by musical family and region for browsing, while stable IDs
 
 * xref:electro/electroid-909-01.adoc[Electroid 909 01] — a rigid 909-oriented pulse interrupted by tom movement.
 
+== Footwork
+
+* xref:footwork/chicago-footwork-01.adoc[Chicago Footwork Study 01] — a fast, two-bar kick relay designed for dance-floor response.
+
+== Batida
+
+* xref:batida/lisbon-batida-01.adoc[Lisbon Batida Study 01] — a percussion-first two-bar framework with shifting low-drum weight.
+
 == Experimental
 
 * xref:experimental/negative-space-relay-01.adoc[Negative-Space Relay 01] — a sparse two-bar groove built from timbral handoffs.

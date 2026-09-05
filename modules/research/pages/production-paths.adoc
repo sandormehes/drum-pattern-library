@@ -1,0 +1,46 @@
+= Production Learning Paths
+:description: Guided routes through the pattern library for listening, programming, and variation.
+
+These routes are practice structures, not genre definitions. Each begins with a documented or contextualized study, then moves toward a deliberate original variation. Use the browser playback only to check placement; choose your own sounds and performance decisions.
+
+== Space to propulsion
+
+Question:: How can the same bar feel suspended, anchored, or relentless?
+
+. Program xref:patterns:jamaica/one-drop-reggae-01.adoc[One-Drop Reggae Study 01] with dry kick, rim, and hat sounds. Leave beat one empty.
+. Switch to xref:patterns:jamaica/rockers-reggae-01.adoc[Rockers Reggae Study 01]. Identify which new low-drum events make it move forward.
+. Switch to xref:patterns:jamaica/steppers-dub-01.adoc[Steppers Dub 01]. Keep the kick constant but mute every other hat event.
+. Create a two-bar variation: retain the steppers kick in bar one, then remove every kick except the final beat in bar two.
+
+Listening companion:: xref:jamaica-uk-lineage.adoc#_1_weight_and_space[Weight and space] in the Jamaica–UK path.
+
+== Broken kick, stable backbeat
+
+Question:: How much kick displacement can a familiar snare frame hold?
+
+. Begin with xref:patterns:garage/ukg-two-step-01.adoc[UK Garage Two-Step 01]. Mark the snare locations before changing anything.
+. Compare xref:patterns:jungle/jungle-break-study-01.adoc[Jungle Break Study 01]. Listen for where break-derived roles replace a regular kick.
+. Program xref:patterns:footwork/chicago-footwork-01.adoc[Chicago Footwork Study 01] at its suggested tempo, then halve the tempo without changing the grid.
+. Write one new two-bar loop with the same snare landmarks as the footwork study and no repeated kick position between bars.
+
+Listening companion:: xref:jamaica-uk-lineage.adoc#_3_breaks_shuffle_and_pirate_radio_mutation[Breaks, shuffle, and pirate-radio mutation].
+
+== Percussion as the engine
+
+Question:: Can percussion establish momentum while the kick remains rare?
+
+. Start with xref:patterns:batida/lisbon-batida-01.adoc[Lisbon Batida Study 01]. Solo PERC A and PERC B before adding low drums.
+. Compare xref:patterns:experimental/weightless-batida/vacuum-batida-01.adoc[Vacuum Batida 01]. Notice how sustained metal events change the perceived size of a gap.
+. Continue with xref:patterns:experimental/weightless-batida/cold-percussion-relay-01.adoc[Cold Percussion Relay 01]. Identify the role handed from one material to another.
+. Make an original two-bar response with no more than three kicks total. Give each percussion lane one function: pulse, reply, or colour.
+
+Listening companion:: xref:patterns:experimental/weightless-batida/index.adoc[Weightless × Batida series].
+
+== From a pattern to a mutation
+
+Question:: How do you preserve a structural relationship without making a disguised copy?
+
+. Select xref:patterns:jamaica/sparse-dancehall-01.adoc[Sparse Dancehall 01] as a parent.
+. Examine xref:patterns:hybrids/jamaica-uk-mutation-01.adoc[Jamaica-UK Mutation 01] and name the changes in kick placement, timbre, and subdivision activity.
+. Compare xref:patterns:experimental/digital-dub-dropout-01.adoc[Digital-Dub Dropout 01], which makes subtraction its principal change.
+. Write a new page only after you can name its parent, transformation, and what is original about the result. Follow xref:ROOT:methodology.adoc[Methodology] when documenting it.
