@@ -29,7 +29,7 @@
 }
 
 .drum-pattern-play:hover { background: #0b6e99; }
-.drum-pattern-play:focus-visible, .drum-pattern-tempo input:focus-visible { outline: 3px solid #f6ad55; outline-offset: 2px; }
+.drum-pattern-play:focus-visible, .drum-pattern-actions button:focus-visible, .drum-pattern-tempo input:focus-visible, .drum-pattern-swing input:focus-visible { outline: 3px solid #f6ad55; outline-offset: 2px; }
 
 .drum-pattern-tempo,
 .drum-pattern-swing {
@@ -44,6 +44,22 @@
 .drum-pattern-swing input { accent-color: #0b6e99; width: 6.5rem; }
 .drum-pattern-tempo output,
 .drum-pattern-swing output { color: #475467; font-variant-numeric: tabular-nums; min-width: 3.9rem; }
+
+.drum-pattern-actions { align-items: center; display: flex; flex-wrap: wrap; gap: .45rem; }
+
+.drum-pattern-actions button {
+  background: #fff;
+  border: 1px solid #98a2b3;
+  border-radius: .3rem;
+  color: #344054;
+  cursor: pointer;
+  font: inherit;
+  font-size: .84rem;
+  padding: .36rem .58rem;
+}
+
+.drum-pattern-actions button:hover { background: #f2f4f7; border-color: #667085; }
+.drum-pattern-status { color: #475467; font-size: .8rem; min-height: 1.2rem; }
 
 .drum-pattern table {
   border-collapse: collapse;
@@ -182,4 +198,11 @@
   }
 
   .drum-pattern-player { align-items: flex-start; flex-direction: column; gap: .55rem; }
+}
+
+@media print {
+  .site-header, .site-footer, .page-turns, .drum-pattern-player { display: none; }
+  .site-main, .site-shell, .doc { margin: 0; max-width: none; padding: 0; }
+  .doc { border: 0; box-shadow: none; }
+  .drum-pattern-scroll { overflow: visible; }
 }

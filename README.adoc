@@ -1,6 +1,6 @@
 = Drum Pattern Library
 
-A human-readable, Git-friendly drum-pattern library built with AsciiDoc and Antora. Version 0.3 adds neutral in-browser pattern playback alongside the self-contained site theme, guided entry point, and browse paths.
+A human-readable, Git-friendly drum-pattern library built with AsciiDoc and Antora. Version 0.4 adds MIDI export, copyable pattern grids, and print-friendly practice pages alongside in-browser playback and browsing tools.
 
 == Preview locally
 
@@ -16,7 +16,7 @@ Open `build/site/index.html` in a browser.
 
 The check command validates pattern metadata, source references, step counts, and symbols before building the site. The UI bundle lives in this repository, so building the site does not depend on downloading a remote theme.
 
-Published pattern pages include a browser-native *Play pattern* control with an adjustable tempo. It synthesizes neutral drum voices locally; no audio files or third-party playback service are required.
+Published pattern pages include browser-native playback with adjustable tempo and swing, General MIDI export, copyable canonical grid data, and a print-friendly practice view. No audio files or third-party playback service are required.
 
 == Add a pattern
 

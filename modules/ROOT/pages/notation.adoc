@@ -48,4 +48,10 @@ The grid describes the rhythmic skeleton, not every performance detail. Record s
 
 Each published grid has a *Play pattern* control. It uses neutral synthesized drum sounds in the browser, so it is useful for hearing placement rather than reproducing a record or prescribing samples. Set tempo and sixteenth-note swing with the sliders; playback loops until *Stop playback* is selected.
 
+== Export and practice
+
+*Export MIDI* downloads a one-track Standard MIDI file using General MIDI percussion on channel 10. Kicks map to Bass Drum 1 (36), snares and claps to Acoustic Snare (38), rims to Side Stick (37), closed hats to Closed Hi-Hat (42), open hats to Open Hi-Hat (46), and other tracks to a neutral percussion note (60). The current tempo and swing settings are included.
+
+*Copy grid* places the canonical text grid on the clipboard for use in notes, a DAW annotation, or a commit. *Print pattern* opens the browser print view, which removes site controls for a clean reference or practice sheet.
+
 For meters or subdivisions that do not fit a 16-step grid, state the meter and subdivision explicitly and retain the same rule: one character per step, grouped by beat.

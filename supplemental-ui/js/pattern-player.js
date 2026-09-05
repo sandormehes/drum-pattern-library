@@ -11,12 +11,23 @@
 
   const volumeFor = (symbol) => ({ X: 0.95, x: 0.68, g: 0.28, o: 0.78 }[symbol] || 0)
 
+  const midiVelocityFor = (symbol) => Math.max(1, Math.round(volumeFor(symbol) * 120))
+
   const instrumentFor = (label) => {
     const normalized = label.toLowerCase()
     if (normalized.includes('kick') || normalized.includes('bass')) return 'kick'
     if (normalized.includes('snare') || normalized.includes('rim') || normalized.includes('clap')) return 'snare'
     if (normalized.includes('hat') || normalized.includes('cymbal')) return 'hat'
     return 'perc'
+  }
+
+  const midiNoteFor = (label, symbol) => {
+    const normalized = label.toLowerCase()
+    if (normalized.includes('kick') || normalized.includes('bass')) return 36
+    if (normalized.includes('rim')) return 37
+    if (normalized.includes('snare') || normalized.includes('clap')) return 38
+    if (normalized.includes('hat') || normalized.includes('cymbal')) return symbol === 'o' ? 46 : 42
+    return 60
   }
 
   const noise = (context) => {
@@ -90,6 +101,78 @@
     if (activePlayer === player) activePlayer = undefined
   }
 
+  const variableLength = (value) => {
+    const bytes = [value & 0x7f]
+    while ((value >>= 7)) bytes.unshift((value & 0x7f) | 0x80)
+    return bytes
+  }
+
+  const midiFile = (player) => {
+    const ticksPerBeat = 96
+    const ticksPerStep = ticksPerBeat / 4
+    const tempo = Math.round(60000000 / Number(player.tempo.value))
+    const events = [{ tick: 0, order: 0, bytes: [0xff, 0x51, 0x03, tempo >> 16, (tempo >> 8) & 0xff, tempo & 0xff] }]
+    player.data.tracks.forEach(({ label, steps }) => {
+      steps.forEach((symbol, step) => {
+        if (!volumeFor(symbol)) return
+        const swingOffset = step % 2 ? ticksPerStep * Number(player.swing.value) / 100 : 0
+        const tick = Math.round(step * ticksPerStep + swingOffset)
+        const note = midiNoteFor(label, symbol)
+        events.push({ tick, order: 2, bytes: [0x99, note, midiVelocityFor(symbol)] })
+        events.push({ tick: tick + 8, order: 1, bytes: [0x89, note, 0] })
+      })
+    })
+    events.sort((left, right) => left.tick - right.tick || left.order - right.order)
+    let previousTick = 0
+    const track = []
+    events.forEach(({ tick, bytes }) => {
+      track.push(...variableLength(tick - previousTick), ...bytes)
+      previousTick = tick
+    })
+    track.push(...variableLength(player.data.stepCount * ticksPerStep - previousTick), 0xff, 0x2f, 0x00)
+    return new Uint8Array([
+      0x4d, 0x54, 0x68, 0x64, 0x00, 0x00, 0x00, 0x06, 0x00, 0x00, 0x00, 0x01, 0x00, ticksPerBeat,
+      0x4d, 0x54, 0x72, 0x6b, (track.length >>> 24) & 0xff, (track.length >>> 16) & 0xff, (track.length >>> 8) & 0xff, track.length & 0xff,
+      ...track,
+    ])
+  }
+
+  const gridText = (data) => data.tracks.map(({ label, steps }) => `${label.padEnd(6)} | ${steps.join('').match(/.{1,4}/g).join(' ')}`).join('\n')
+
+  const setStatus = (player, message) => {
+    player.status.value = message
+    player.status.textContent = message
+  }
+
+  const copyGrid = async (player) => {
+    const text = gridText(player.data)
+    try {
+      if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(text)
+      else {
+        const textarea = document.createElement('textarea')
+        textarea.value = text
+        textarea.style.position = 'fixed'
+        document.body.append(textarea)
+        textarea.select()
+        document.execCommand('copy')
+        textarea.remove()
+      }
+      setStatus(player, 'Grid copied')
+    } catch {
+      setStatus(player, 'Copy failed — select the grid from this page instead')
+    }
+  }
+
+  const exportMidi = (player) => {
+    const blob = new Blob([midiFile(player)], { type: 'audio/midi' })
+    const link = document.createElement('a')
+    link.href = URL.createObjectURL(blob)
+    link.download = `${document.title.replace(/[^a-z0-9]+/gi, '-').replace(/(^-|-$)/g, '').toLowerCase()}.mid`
+    link.click()
+    window.setTimeout(() => URL.revokeObjectURL(link.href), 0)
+    setStatus(player, 'MIDI download started')
+  }
+
   const playLoop = (player) => {
     if (!player.playing) return
     const context = getContext()
@@ -116,12 +199,16 @@
       data: JSON.parse(atob(element.dataset.pattern)),
       element,
       playing: false,
+      status: element.querySelector('.drum-pattern-status'),
       swing,
       tempo,
       timeout: undefined,
     }
     tempo.addEventListener('input', () => { output.value = `${tempo.value} BPM`; output.textContent = `${tempo.value} BPM` })
     swing.addEventListener('input', () => { swingOutput.value = `${swing.value}%`; swingOutput.textContent = `${swing.value}%` })
+    element.querySelector('.drum-pattern-midi').addEventListener('click', () => exportMidi(player))
+    element.querySelector('.drum-pattern-copy').addEventListener('click', () => copyGrid(player))
+    element.querySelector('.drum-pattern-print').addEventListener('click', () => window.print())
     button.addEventListener('click', async () => {
       if (player.playing) return stop(player)
       if (activePlayer) stop(activePlayer)
