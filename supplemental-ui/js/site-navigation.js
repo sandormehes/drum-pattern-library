@@ -72,6 +72,8 @@
     let item = document.querySelector('.nav-tree a[aria-current="page"]')?.closest('li')
     while (item) {
       item.classList.add('has-current')
+      const branch = item.closest('.nav-branch')
+      if (branch) branch.open = true
       item = item.parentElement?.closest('li')
     }
   }

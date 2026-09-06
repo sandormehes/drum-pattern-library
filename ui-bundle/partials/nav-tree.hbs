@@ -1,12 +1,19 @@
 <ul class="nav-tree">
 {{#each items}}
   <li>
-    {{#if url}}
-      <a href="{{relativize url}}" {{#if (isCurrent url)}}aria-current="page"{{/if}}>{{content}}</a>
+    {{#if items}}
+      <details class="nav-branch">
+        <summary>{{content}}</summary>
+        {{#if url}}<a class="nav-tree__overview" href="{{relativize url}}">All {{content}}</a>{{/if}}
+        {{> nav-tree items=items}}
+      </details>
     {{else}}
-      <span class="nav-tree__label">{{content}}</span>
+      {{#if url}}
+        <a href="{{relativize url}}" {{#if (isCurrent url)}}aria-current="page"{{/if}}>{{content}}</a>
+      {{else}}
+        <span class="nav-tree__label">{{content}}</span>
+      {{/if}}
     {{/if}}
-    {{#if items}}{{> nav-tree items=items}}{{/if}}
   </li>
 {{/each}}
 </ul>

@@ -36,9 +36,12 @@ body { margin: 0; }
 .site-sidebar summary { color: #102a43; cursor: pointer; font-size: .82rem; font-weight: 750; letter-spacing: .07em; padding: .6rem 0; text-transform: uppercase; }
 .nav-tree { list-style: none; margin: 0; padding: 0; }
 .nav-tree .nav-tree { border-left: 1px solid #d9e2ec; margin: .16rem 0 .25rem .38rem; padding-left: .65rem; }
+.nav-branch > summary { color: #243b53; cursor: pointer; font-size: .9rem; font-weight: 700; line-height: 1.3; padding: .3rem .35rem; }
+.nav-branch > summary:hover { color: #0b6e99; }
+.nav-tree__overview { color: #627d98 !important; font-size: .8rem !important; margin-left: .65rem; }
 .nav-tree a, .nav-tree__label { color: #486581; display: block; font-size: .9rem; line-height: 1.3; padding: .3rem .35rem; text-decoration: none; }
 .nav-tree__label { color: #243b53; font-weight: 700; margin-top: .45rem; }
-.nav-tree .has-current > .nav-tree__label { color: #0b6e99; }
+.nav-tree .has-current > .nav-branch > summary { color: #0b6e99; }
 .nav-tree a:hover { color: #0b6e99; text-decoration: underline; }
 .nav-tree a[aria-current="page"] { background: #eaf2f8; border-left: 3px solid #d97706; color: #102a43; font-weight: 700; margin-left: -.65rem; padding-left: 1rem; }
 .site-content { min-width: 0; }
