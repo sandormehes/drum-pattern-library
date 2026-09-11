@@ -3,7 +3,6 @@
 
   let audioContext
   let activePlayer
-  const drumLabKitCache = new Map()
 
   const getContext = () => {
     if (!audioContext) audioContext = new AudioContext()
@@ -168,14 +167,20 @@
       const manifest = await response.json()
       if (!Object.keys(manifest.samples || {}).length) throw new Error('The Drum Lab kit has no samples')
       const context = getContext()
-      const samples = await Promise.all(Object.entries(manifest.samples || {}).map(async ([name, file]) => {
-        const audio = await fetch(new URL(file, manifestUrl)).then((item) => {
-          if (!item.ok) throw new Error(`Could not load ${file}`)
-          return item.arrayBuffer()
-        })
-        return [name, await context.decodeAudioData(audio)]
+      const samples = await Promise.all(Object.entries(manifest.samples || {}).map(async ([name, value]) => {
+        const files = Array.isArray(value) ? value : [value]
+        if (!files.length || files.some((file) => typeof file !== 'string')) throw new Error(`Invalid ${name} sample group`)
+        const buffers = await Promise.all(files.map(async (file) => {
+          const audio = await fetch(new URL(file, manifestUrl)).then((item) => {
+            if (!item.ok) throw new Error(`Could not load ${file}`)
+            return item.arrayBuffer()
+          })
+          return context.decodeAudioData(audio)
+        }))
+        return [name, buffers]
       }))
       player.kit = Object.fromEntries(samples)
+      player.trackMap = Object.fromEntries(Object.entries(manifest.tracks || {}).map(([label, group]) => [label.toLowerCase(), group]))
       return player.kit
     } catch (error) {
       player.kitSelect.value = 'synth'
@@ -189,7 +194,11 @@
     return !player.soloed.size || player.soloed.has(track)
   }
 
-  const sampleFor = (player, label) => player.kit?.[instrumentFor(label)]
+  const sampleFor = (player, label, step = 0) => {
+    const group = player.trackMap?.[label.toLowerCase()] || instrumentFor(label)
+    const samples = player.kit?.[group]
+    return samples?.[step % samples.length]
+  }
 
   const playClick = (context, time, accent) => tone(context, time, accent ? 1480 : 980, 0.035, accent ? 0.18 : 0.11, 'square')
 
@@ -218,7 +227,7 @@
     const { label, steps } = player.data.tracks[track]
     steps.forEach((symbol, step) => {
       const swingOffset = step % 2 ? secondsPerStep * Number(player.swing.value) / 100 : 0
-      playHit(offline, instrumentFor(label), symbol, step * secondsPerStep + swingOffset, sampleFor(player, label))
+      playHit(offline, instrumentFor(label), symbol, step * secondsPerStep + swingOffset, sampleFor(player, label, step))
     })
     const rendered = await offline.startRendering()
     const link = document.createElement('a')
@@ -268,7 +277,7 @@
       const swingOffset = step % 2 ? secondsPerStep * Number(player.swing.value) / 100 : 0
       const time = start + step * secondsPerStep + swingOffset
       player.data.tracks.forEach(({ label, steps }, track) => {
-        if (audible(player, track)) playHit(context, instrumentFor(label), steps[step], time, sampleFor(player, label))
+        if (audible(player, track)) playHit(context, instrumentFor(label), steps[step], time, sampleFor(player, label, step))
       })
       if (player.metronome.checked && step % 4 === 0) playClick(context, time, step === 0)
       window.setTimeout(() => setActiveStep(player, step), Math.max(0, (time - context.currentTime) * 1000))
@@ -295,6 +304,7 @@
       playing: false,
       soloed: new Set(),
       status: element.querySelector('.drum-pattern-status'),
+      trackMap: {},
       swing,
       tempo,
       timeout: undefined,

@@ -25,6 +25,46 @@ The pattern player can use a small, static sound set exported from https://githu
 
 The key names are deliberately role-based. The player maps kick/bass lanes to `kick`, snare/rim/clap lanes to `snare`, hats/cymbals to `hat`, and every other lane to `perc`.
 
+== Add alternates such as Perc A and Perc B
+
+Use an array when several sounds should share a role. The player rotates through the files by step number, so every loop, browser playback, and stem export uses the same predictable order:
+
+[source,json]
+----
+{
+  "name": "Drum Lab — Ping 01",
+  "samples": {
+    "kick": "KICK.wav",
+    "snare": "SNARE.wav",
+    "hat": "HAT.wav",
+    "perc": ["PERC_A.wav", "PERC_B.wav"]
+  }
+}
+----
+
+For separate pattern lanes named `PERC A` and `PERC B`, map those labels to their own sample groups:
+
+[source,json]
+----
+{
+  "name": "Drum Lab — Split Percussion",
+  "samples": {
+    "kick": "KICK.wav",
+    "snare": "SNARE.wav",
+    "hat": "HAT.wav",
+    "perc": "PERC_A.wav",
+    "perc-a": "PERC_A.wav",
+    "perc-b": "PERC_B.wav"
+  },
+  "tracks": {
+    "PERC A": "perc-a",
+    "PERC B": "perc-b"
+  }
+}
+----
+
+Track-label mappings ignore letter case, but the spelling must otherwise match the label in the pattern grid.
+
 == Play and explore
 
 Choose *Drum Lab kit* in a pattern's *Sound set* menu. The player falls back safely to built-in synthesis if the kit is not installed or a file cannot load.

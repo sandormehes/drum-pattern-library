@@ -4,6 +4,6 @@
     "kick": "GRKICK_001.wav",
     "snare": "GRSNARE_003.wav",
     "hat": "GRHAT_001.wav",
-    "perc": "GQPERC_004.wav"
+    "perc": ["GQPERC_004.wav", "DHSHAKE_001.wav"]
   }
 }

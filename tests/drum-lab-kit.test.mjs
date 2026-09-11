@@ -20,18 +20,22 @@ test('Drum Lab kit manifest references complete, compatible WAV samples', async 
   assert.ok(manifest.name.trim(), 'kit needs a name')
 
   for (const role of requiredRoles) {
-    const filename = manifest.samples?.[role]
-    assert.equal(typeof filename, 'string', `kit needs a ${role} sample`)
-    assert.match(filename, /\.wav$/i, `${role} must be a WAV file`)
+    const value = manifest.samples?.[role]
+    const filenames = Array.isArray(value) ? value : [value]
+    assert.ok(filenames.length, `kit needs a ${role} sample`)
 
-    const sample = await readFile(path.join(kitDirectory, filename))
-    assert.equal(sample.subarray(0, 4).toString('ascii'), 'RIFF', `${filename} is a RIFF file`)
-    assert.equal(sample.subarray(8, 12).toString('ascii'), 'WAVE', `${filename} is a WAVE file`)
-    assert.deepEqual(wavFormat(sample), {
-      audioFormat: 1,
-      channels: 1,
-      sampleRate: 44100,
-      bitsPerSample: 16,
-    }, `${filename} is 44.1 kHz, 16-bit mono PCM`)
+    for (const filename of filenames) {
+      assert.equal(typeof filename, 'string', `${role} filenames must be strings`)
+      assert.match(filename, /\.wav$/i, `${role} must be a WAV file`)
+      const sample = await readFile(path.join(kitDirectory, filename))
+      assert.equal(sample.subarray(0, 4).toString('ascii'), 'RIFF', `${filename} is a RIFF file`)
+      assert.equal(sample.subarray(8, 12).toString('ascii'), 'WAVE', `${filename} is a WAVE file`)
+      assert.deepEqual(wavFormat(sample), {
+        audioFormat: 1,
+        channels: 1,
+        sampleRate: 44100,
+        bitsPerSample: 16,
+      }, `${filename} is 44.1 kHz, 16-bit mono PCM`)
+    }
   }
 })
