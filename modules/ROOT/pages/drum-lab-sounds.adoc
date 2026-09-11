@@ -1,0 +1,36 @@
+= Use a Drum Lab Sound Set
+:description: Play library patterns with generated SuperCollider WAV samples.
+
+The pattern player can use a small, static sound set exported from https://github.com/sandormehes/sc-mpc-drum-lab[SC MPC Drum Lab]. It never runs SuperCollider in the browser: the site loads the generated WAV files, so the published library remains fast and portable.
+
+== Prepare a kit
+
+. In Drum Lab, generate or export a compact favourite kit. The `dancehall16`, `grime16`, or `gqom16` templates are good starting points.
+. Select four representative sounds: kick, snare, closed hat, and a general percussion sound. Keep the original `recipe.json` and manifest with the exported kit so the source sounds remain reproducible.
+. Copy the WAV files into `supplemental-ui/audio/drumlab-kit/`.
+. Replace the placeholder manifest with the filenames for that kit:
+
+[source,json]
+----
+{
+  "name": "Drum Lab — Grime 01",
+  "samples": {
+    "kick": "DL-KICK.WAV",
+    "snare": "DL-SNARE.WAV",
+    "hat": "DL-HAT.WAV",
+    "perc": "DL-PERC.WAV"
+  }
+}
+----
+
+The key names are deliberately role-based. The player maps kick/bass lanes to `kick`, snare/rim/clap lanes to `snare`, hats/cymbals to `hat`, and every other lane to `perc`.
+
+== Play and explore
+
+Choose *Drum Lab kit* in a pattern's *Sound set* menu. The player falls back safely to built-in synthesis if the kit is not installed or a file cannot load.
+
+The *Mix and download stems* panel offers per-track mute and solo controls plus a WAV export for every track. Loop length and metronome are available in the main player bar. Stem files use the selected sound set, tempo, and swing settings; they render the full original pattern so they can be dropped into a DAW without losing a second bar.
+
+== Source and licensing
+
+SC MPC Drum Lab is MIT licensed. Keep its generated manifest and recipe alongside source WAVs in the project repository or release archive; that preserves the synthesis provenance without forcing site visitors to install SuperCollider.

@@ -32,6 +32,9 @@ jobs:
       - name: Validate and build site
         run: npm run check
 
+      - name: Verify published Drum Lab kit
+        run: test -f build/site/_/audio/drumlab-kit/manifest.json
+
       - name: Configure GitHub Pages
         if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v6

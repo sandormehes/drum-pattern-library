@@ -3,6 +3,7 @@
 
   let audioContext
   let activePlayer
+  const drumLabKitCache = new Map()
 
   const getContext = () => {
     if (!audioContext) audioContext = new AudioContext()
@@ -63,9 +64,18 @@
     source.stop(time + duration)
   }
 
-  const playHit = (context, kind, symbol, time) => {
+  const playHit = (context, kind, symbol, time, sample) => {
     const level = volumeFor(symbol)
     if (!level) return
+    if (sample) {
+      const source = context.createBufferSource()
+      const gain = context.createGain()
+      source.buffer = sample
+      gain.gain.setValueAtTime(level, time)
+      source.connect(gain).connect(context.destination)
+      source.start(time)
+      return
+    }
     if (kind === 'kick') {
       const oscillator = context.createOscillator()
       const gain = context.createGain()
@@ -144,6 +154,81 @@
     player.status.textContent = message
   }
 
+  const scriptRoot = () => {
+    const script = document.querySelector('script[src*="pattern-player"]')
+    return script ? new URL('../', script.src) : new URL('./', window.location.href)
+  }
+
+  const loadDrumLabKit = async (player) => {
+    if (player.kit) return player.kit
+    const manifestUrl = new URL('audio/drumlab-kit/manifest.json', scriptRoot())
+    try {
+      const response = await fetch(manifestUrl)
+      if (!response.ok) throw new Error('The Drum Lab kit is not installed')
+      const manifest = await response.json()
+      if (!Object.keys(manifest.samples || {}).length) throw new Error('The Drum Lab kit has no samples')
+      const context = getContext()
+      const samples = await Promise.all(Object.entries(manifest.samples || {}).map(async ([name, file]) => {
+        const audio = await fetch(new URL(file, manifestUrl)).then((item) => {
+          if (!item.ok) throw new Error(`Could not load ${file}`)
+          return item.arrayBuffer()
+        })
+        return [name, await context.decodeAudioData(audio)]
+      }))
+      player.kit = Object.fromEntries(samples)
+      return player.kit
+    } catch (error) {
+      player.kitSelect.value = 'synth'
+      setStatus(player, `Drum Lab kit unavailable — using built-in synthesis`)
+      return undefined
+    }
+  }
+
+  const audible = (player, track) => {
+    if (player.muted.has(track)) return false
+    return !player.soloed.size || player.soloed.has(track)
+  }
+
+  const sampleFor = (player, label) => player.kit?.[instrumentFor(label)]
+
+  const playClick = (context, time, accent) => tone(context, time, accent ? 1480 : 980, 0.035, accent ? 0.18 : 0.11, 'square')
+
+  const wavFile = (buffer) => {
+    const samples = buffer.getChannelData(0)
+    const bytes = new ArrayBuffer(44 + samples.length * 2)
+    const view = new DataView(bytes)
+    const put = (offset, text) => [...text].forEach((character, index) => view.setUint8(offset + index, character.charCodeAt(0)))
+    put(0, 'RIFF'); view.setUint32(4, 36 + samples.length * 2, true); put(8, 'WAVE'); put(12, 'fmt ')
+    view.setUint32(16, 16, true); view.setUint16(20, 1, true); view.setUint16(22, 1, true)
+    view.setUint32(24, buffer.sampleRate, true); view.setUint32(28, buffer.sampleRate * 2, true); view.setUint16(32, 2, true); view.setUint16(34, 16, true)
+    put(36, 'data'); view.setUint32(40, samples.length * 2, true)
+    samples.forEach((sample, index) => view.setInt16(44 + index * 2, Math.max(-1, Math.min(1, sample)) * 0x7fff, true))
+    return new Blob([bytes], { type: 'audio/wav' })
+  }
+
+  const downloadStem = async (player, track) => {
+    if (!window.OfflineAudioContext) {
+      setStatus(player, 'Stem export is not supported by this browser')
+      return
+    }
+    const tempo = Number(player.tempo.value)
+    const secondsPerStep = 60 / tempo / 4
+    const duration = player.data.stepCount * secondsPerStep + 1
+    const offline = new OfflineAudioContext(1, Math.ceil(duration * 44100), 44100)
+    const { label, steps } = player.data.tracks[track]
+    steps.forEach((symbol, step) => {
+      const swingOffset = step % 2 ? secondsPerStep * Number(player.swing.value) / 100 : 0
+      playHit(offline, instrumentFor(label), symbol, step * secondsPerStep + swingOffset, sampleFor(player, label))
+    })
+    const rendered = await offline.startRendering()
+    const link = document.createElement('a')
+    link.href = URL.createObjectURL(wavFile(rendered))
+    link.download = `${label.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-stem.wav`
+    link.click()
+    window.setTimeout(() => URL.revokeObjectURL(link.href), 0)
+    setStatus(player, `${label} stem download started`)
+  }
+
   const copyGrid = async (player) => {
     const text = gridText(player.data)
     try {
@@ -178,13 +263,17 @@
     const context = getContext()
     const secondsPerStep = 60 / Number(player.tempo.value) / 4
     const start = context.currentTime + 0.04
-    for (let step = 0; step < player.data.stepCount; step += 1) {
+    const loopSteps = Number(player.loop.value)
+    for (let step = 0; step < loopSteps; step += 1) {
       const swingOffset = step % 2 ? secondsPerStep * Number(player.swing.value) / 100 : 0
       const time = start + step * secondsPerStep + swingOffset
-      player.data.tracks.forEach(({ label, steps }) => playHit(context, instrumentFor(label), steps[step], time))
+      player.data.tracks.forEach(({ label, steps }, track) => {
+        if (audible(player, track)) playHit(context, instrumentFor(label), steps[step], time, sampleFor(player, label))
+      })
+      if (player.metronome.checked && step % 4 === 0) playClick(context, time, step === 0)
       window.setTimeout(() => setActiveStep(player, step), Math.max(0, (time - context.currentTime) * 1000))
     }
-    player.timeout = window.setTimeout(() => playLoop(player), player.data.stepCount * secondsPerStep * 1000)
+    player.timeout = window.setTimeout(() => playLoop(player), loopSteps * secondsPerStep * 1000)
   }
 
   const makePlayer = (element) => {
@@ -198,7 +287,13 @@
       cells: [...element.querySelectorAll('td[data-step]')],
       data: JSON.parse(atob(element.dataset.pattern)),
       element,
+      kit: undefined,
+      kitSelect: element.querySelector('.drum-pattern-kit select'),
+      loop: element.querySelector('.drum-pattern-loop select'),
+      metronome: element.querySelector('.drum-pattern-click input'),
+      muted: new Set(),
       playing: false,
+      soloed: new Set(),
       status: element.querySelector('.drum-pattern-status'),
       swing,
       tempo,
@@ -209,11 +304,25 @@
     element.querySelector('.drum-pattern-midi').addEventListener('click', () => exportMidi(player))
     element.querySelector('.drum-pattern-copy').addEventListener('click', () => copyGrid(player))
     element.querySelector('.drum-pattern-print').addEventListener('click', () => window.print())
+    player.kitSelect.addEventListener('change', async () => {
+      if (player.kitSelect.value === 'drum-lab') await loadDrumLabKit(player)
+      else setStatus(player, 'Using built-in synthesis')
+    })
+    element.querySelectorAll('[data-track-mute]').forEach((control) => control.addEventListener('change', () => {
+      const track = Number(control.dataset.trackMute)
+      control.checked ? player.muted.add(track) : player.muted.delete(track)
+    }))
+    element.querySelectorAll('[data-track-solo]').forEach((control) => control.addEventListener('change', () => {
+      const track = Number(control.dataset.trackSolo)
+      control.checked ? player.soloed.add(track) : player.soloed.delete(track)
+    }))
+    element.querySelectorAll('[data-track-stem]').forEach((button) => button.addEventListener('click', () => downloadStem(player, Number(button.dataset.trackStem))))
     button.addEventListener('click', async () => {
       if (player.playing) return stop(player)
       if (activePlayer) stop(activePlayer)
       const context = getContext()
       if (context.state === 'suspended') await context.resume()
+      if (player.kitSelect.value === 'drum-lab') await loadDrumLabKit(player)
       player.playing = true
       activePlayer = player
       button.textContent = 'Stop playback'

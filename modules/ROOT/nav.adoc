@@ -1,6 +1,7 @@
 * xref:index.adoc[Home]
 * xref:start-here.adoc[Start Here]
 * xref:browse.adoc[Browse]
+* xref:drum-lab-sounds.adoc[Drum Lab Sounds]
 * xref:contributing.adoc[Contributing]
 * xref:notation.adoc[Notation]
 * xref:methodology.adoc[Methodology]

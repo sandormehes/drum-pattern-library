@@ -32,7 +32,10 @@
 .drum-pattern-play:focus-visible, .drum-pattern-actions button:focus-visible, .drum-pattern-tempo input:focus-visible, .drum-pattern-swing input:focus-visible { outline: 3px solid #f6ad55; outline-offset: 2px; }
 
 .drum-pattern-tempo,
-.drum-pattern-swing {
+.drum-pattern-swing,
+.drum-pattern-loop,
+.drum-pattern-click,
+.drum-pattern-kit {
   align-items: center;
   color: #344054;
   display: flex;
@@ -42,6 +45,8 @@
 
 .drum-pattern-tempo input,
 .drum-pattern-swing input { accent-color: #0b6e99; width: 6.5rem; }
+.drum-pattern-loop select,
+.drum-pattern-kit select { border: 1px solid #98a2b3; border-radius: .25rem; color: #344054; font: inherit; padding: .18rem; }
 .drum-pattern-tempo output,
 .drum-pattern-swing output { color: #475467; font-variant-numeric: tabular-nums; min-width: 3.9rem; }
 
@@ -60,6 +65,14 @@
 
 .drum-pattern-actions button:hover { background: #f2f4f7; border-color: #667085; }
 .drum-pattern-status { color: #475467; font-size: .8rem; min-height: 1.2rem; }
+
+.drum-pattern-mixer { color: #344054; font-size: .88rem; margin: 0 0 .65rem; }
+.drum-pattern-mixer summary { cursor: pointer; font-weight: 650; }
+.drum-pattern-track-controls { display: grid; gap: .4rem; margin-top: .55rem; max-width: 42rem; }
+.drum-pattern-track-control { align-items: center; display: grid; gap: .55rem; grid-template-columns: minmax(5rem, 1fr) auto auto auto; }
+.drum-pattern-track-control label { white-space: nowrap; }
+.drum-pattern-stem { background: #fff; border: 1px solid #98a2b3; border-radius: .3rem; color: #344054; cursor: pointer; font: inherit; font-size: .82rem; padding: .3rem .48rem; }
+.drum-pattern-stem:hover { background: #f2f4f7; }
 
 .drum-pattern table {
   border-collapse: collapse;
@@ -198,6 +211,8 @@
   }
 
   .drum-pattern-player { align-items: flex-start; flex-direction: column; gap: .55rem; }
+  .drum-pattern-track-control { grid-template-columns: minmax(5rem, 1fr) auto auto; }
+  .drum-pattern-stem { grid-column: 1 / -1; justify-self: start; }
 }
 
 @media print {
