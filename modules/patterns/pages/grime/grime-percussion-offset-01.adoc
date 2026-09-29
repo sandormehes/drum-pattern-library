@@ -1,0 +1,65 @@
+= Grime Percussion Offset 01
+:pattern-id: GR-140-004
+:family: Grime-informed hybrid
+:region: United Kingdom / Lisbon dialogue
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 138–142 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-plastician, src-principe-profile, src-lycox
+:tags: grime-informed, batida-informed, half-time, percussion, offset, two-bar, original-study
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---x -x-- ---- | ---- x--- --x- -x--
+SNARE  | ---- X--- ---- X--- | ---- X--- ---- X---
+HAT    | x-x- xx-- -x-x x-x- | -x-x x-xx x-x- xx--
+PERC A | --x- -x-- ---x x--- | x--- ---x -x-- --x-
+PERC B | ---- x--g -x-- ---- | --g- x--- ---- x---
+----
+
+== Character
+
+This original 140 BPM study keeps a grime-scale half-time backbeat while a pair of
+percussion lanes pull sideways against it. Bar two moves the low-drum emphasis away
+from the downbeat, making the returning snare feel heavier without adding density.
+
+== Rhythmic roles
+
+Frame:: The snare locks the two-bar span into a clear half-time reading.
+Offset:: Kicks begin grounded, then enter bar two after beat one rather than on it.
+Interlock:: PERC A supplies short dry replies while PERC B uses quieter, longer-feeling events to connect them.
+
+== Performance notes
+
+* Start with the snare and kick only; introduce percussion one lane at a time.
+* Tune PERC A higher than PERC B so their separate rhythmic roles remain audible.
+* Keep hats lower in the mix than the percussion; they should imply speed, not dominate the groove.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original hybrid study. The half-time frame is grime-informed and the independent percussion is batida-informed; the pattern does not transcribe or imitate a particular artist or recording.
+References:: xref:research:sources.adoc#src-plastician[Plastician] supports grime context. The xref:research:sources.adoc#src-principe-profile[Príncipe profile] and xref:research:sources.adoc#src-lycox[DJ Lycox interview] support the Lisbon batida context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:grime/grime-130-03.adoc[Grime 130 03]
+* xref:hybrids/grime-batida-mutation-01.adoc[Grime-Batida Mutation 01]

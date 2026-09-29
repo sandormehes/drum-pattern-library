@@ -1,0 +1,65 @@
+= Diaspora Bell Relay 01
+:pattern-id: BT-142-002
+:family: Batida-informed percussion study
+:region: Lisbon, Portugal / African-diasporic context
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 138–144 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-principe-profile, src-lycox
+:tags: batida-informed, african-diasporic, bell, percussion, interlocking, two-bar, original-study
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- -x-- ---- | ---- x--- ---- --x-
+SNARE  | ---- X--- ---- ---- | X--- ---- ---- X---
+BELL   | --x- ---x -x-- --x- | -x-- --x- ---x -x--
+PERC A | -x-- x--- ---x x--- | --x- x--- x--- ---x
+PERC B | ---- --g- x--- --x- | x--- -x-- --g- x---
+----
+
+== Character
+
+An original, percussion-led two-bar study built around a turning bell phrase and
+short answer figures. The low drum stays deliberately discontinuous, leaving the
+interlocking upper voices to create the forward motion.
+
+== Rhythmic roles
+
+Bell:: A five-event contour shifts its placement in bar two without becoming a fixed metronome.
+Answers:: The two percussion lanes take alternating spaces around the bell.
+Weight:: Sparse kick and snare events give the loop large landmarks but do not flatten its motion into a standard backbeat.
+
+== Performance notes
+
+* Use a dry, short bell tone with a distinct pitch from both percussion lanes.
+* Keep PERC B's ghost hits notably quieter than its normal attacks.
+* On a later repeat, remove the last bar-two kick and let the bell phrase pull the loop back to the start.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original educational study. “African-diasporic” identifies the Lisbon batida context, not a claim to represent or transcribe any particular African rhythm tradition, artist, or recording.
+References:: The xref:research:sources.adoc#src-principe-profile[Príncipe profile] and xref:research:sources.adoc#src-lycox[DJ Lycox interview] provide context for the percussion-led, community-rooted Lisbon scene.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:batida/lisbon-batida-01.adoc[Lisbon Batida Study 01]
+* xref:experimental/weightless-batida/seven-step-bell-01.adoc[Seven-Step Bell Rotation 01]

@@ -1,0 +1,65 @@
+= Footwork Polyrhythm 01
+:pattern-id: EX-160-008
+:family: Experimental footwork study
+:region: Experimental / Chicago footwork dialogue
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 158–164 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-rp-boo, src-kode9
+:tags: experimental, footwork-informed, polyrhythm, percussion, asymmetric, two-bar, original-study
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- --x- -x-- ---x | --x- -x-- ---- x---
+SNARE  | ---- X--- ---- X--- | ---- X--- ---- X---
+TOM    | --x- ---x -x-- ---- | -x-- --x- ---x -x--
+HAT    | x-x- xx-x -x-x x-xx | xx-x -x-x x-xx -x-x
+PERC   | -x-- x--- ---x x--g | x--- --x- x--g ----
+----
+
+== Character
+
+An original fast-footwork study with a three-against-four feel implied by the tom
+and percussion lanes. The fixed snare gives the pattern a readable centre while
+the kick and tom figures keep changing their relationship to it across two bars.
+
+== Design device
+
+Cross-rhythm:: The tom gestures recur after uneven gaps, suggesting a cycle that is not confined to the bar.
+Relay:: Kicks answer the tom attacks without duplicating their contour.
+Anchor:: The snare remains fixed so the layered accents can be heard as tension rather than a meter change.
+
+== Performance notes
+
+* Choose a tom with a short, pitched body so its recurring contour is perceptible at speed.
+* Keep the snare more consistent in velocity than the other lanes.
+* Try muting the hats for one repeat; the kick-and-tom relationship should still carry the loop.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original educational study informed by high-density, polyrhythmic footwork production approaches associated with Jlin, but not a transcription or imitation of any specific recording.
+References:: The xref:research:sources.adoc#src-rp-boo[RP Boo interview] provides Chicago footwork scene context, while xref:research:sources.adoc#src-kode9[Kode9] provides broader electronic-music context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:experimental/footwork-counterphase-01.adoc[Footwork Counterphase 01]
+* xref:footwork/chicago-footwork-01.adoc[Chicago Footwork Study 01]
