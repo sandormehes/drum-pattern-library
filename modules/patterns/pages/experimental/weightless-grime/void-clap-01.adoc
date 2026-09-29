@@ -1,0 +1,65 @@
+= Void Clap 01
+:pattern-id: EX-140-011
+:family: Weightless grime study
+:region: United Kingdom / experimental dialogue
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 138–142 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-weightless, src-mumdance-archive, src-plastician
+:tags: weightless, grime-informed, negative-space, clap, sparse, two-bar, original-study
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | ---- ---- x--- ---- | X--- ---- ---- ---x
+SNARE  | ---- ---- ---- X--- | ---- ---- ---- ----
+CLAP   | ---- ---- ---- ---- | ---- X--- ---- ----
+HAT    | ---- x--- ---- ---- | ---- ---- --x- ----
+PERC   | --x- ---- ---- ---- | ---- ---- ---- x--g
+----
+
+== Character
+
+This two-bar study begins without a downbeat kick and uses a clap as the only
+clear bar-two marker. The low-drum attacks enter late, so the grid is sensed from
+the distance between events rather than from any continuous pulse.
+
+== Rhythmic roles
+
+Void:: Bar one leaves the first half almost untouched, turning the late snare into an arrival.
+Reframe:: The bar-two clap shifts the listener's expectation without asserting a conventional backbeat.
+Trace:: Hats and percussion are isolated traces of subdivision, not a running timekeeper.
+
+== Performance notes
+
+* Keep the clap short and slightly brighter than the snare so it reads as a separate landmark.
+* Resist filling the first sixteenth of either bar; the missing downbeats are structural.
+* Automate a reverb tail to bloom after the bar-one snare, then remove it before the first bar-two kick.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original educational study exploring a negative-space grime frame through delayed kicks and non-standard backbeat placement. It is not a transcription or imitation of a particular work.
+References:: The xref:research:sources.adoc#src-weightless[Logos and Mumdance interview] and xref:research:sources.adoc#src-mumdance-archive[Mumdance archive] provide weightless context; xref:research:sources.adoc#src-plastician[Plastician] provides grime context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:experimental/weightless-grime/absence-pressure-01.adoc[Absence Pressure 01]
+* xref:experimental/halfstep-phase-shift-01.adoc[Half-Step Phase Shift 01]

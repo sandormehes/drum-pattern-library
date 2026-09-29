@@ -1,0 +1,66 @@
+= Receding Impact 01
+:pattern-id: EX-140-012
+:family: Weightless grime study
+:region: United Kingdom / experimental dialogue
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 138–142 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-weightless, src-mumdance-archive, src-plastician
+:tags: weightless, grime-informed, negative-space, dropout, percussion, two-bar, original-study
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- ---x ---- | ---- ---- ---- x---
+SNARE  | ---- X--- ---- ---- | ---- ---- X--- ----
+HAT    | -x-- ---- --x- ---- | ---- -x-- ---- ----
+METAL  | ---- ---o ---- ---- | --o- ---- ---- ----
+PERC   | ---- x--g ---- ---- | ---- ---- ---g x---
+----
+
+== Character
+
+The first bar offers a conventional-looking kick and snare outline, then the
+second bar removes nearly all foundation. The remaining snare, metal decay, and
+final percussion event make the groove feel as if it is receding into a darker
+space rather than resolving cleanly.
+
+== Design device
+
+Dropout:: Bar two strips away the expected restart kick and most subdivision cues.
+Recession:: A metal attack moves earlier in bar two while the main snare moves later, stretching the perceived distance between impacts.
+Return:: The final percussion event is deliberately too light to function as a fill; it suggests, rather than delivers, the restart.
+
+== Performance notes
+
+* Use a kick with a strong initial transient and a very short tail.
+* Let the metallic layer have a longer decay than the snare, but duck it lightly at the snare attack.
+* For a more severe version, mute every hat on alternate repeats and preserve only the metal tails.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original educational study centered on subtraction and unresolved return points in a weightless-grime frame. It does not transcribe or imitate a particular artist or recording.
+References:: The xref:research:sources.adoc#src-weightless[Logos and Mumdance interview] and xref:research:sources.adoc#src-mumdance-archive[Mumdance archive] provide weightless context; xref:research:sources.adoc#src-plastician[Plastician] provides grime context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:experimental/weightless-grime/void-clap-01.adoc[Void Clap 01]
+* xref:experimental/digital-dub-dropout-01.adoc[Digital-Dub Dropout 01]

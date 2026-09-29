@@ -31,6 +31,10 @@
 *** xref:experimental/footwork-counterphase-01.adoc[Footwork Counterphase 01]
 *** xref:experimental/footwork-polyrhythm-01.adoc[Footwork Polyrhythm 01]
 *** xref:experimental/footwork-rotor-01.adoc[Footwork Rotor 01]
+*** Weightless Grime Studies
+**** xref:experimental/weightless-grime/absence-pressure-01.adoc[Absence Pressure 01]
+**** xref:experimental/weightless-grime/void-clap-01.adoc[Void Clap 01]
+**** xref:experimental/weightless-grime/receding-impact-01.adoc[Receding Impact 01]
 *** xref:experimental/weightless-batida/index.adoc[Weightless × Batida Series]
 **** xref:experimental/weightless-batida/vacuum-batida-01.adoc[Vacuum Batida 01]
 **** xref:experimental/weightless-batida/ping-interlock-01.adoc[Ping Interlock 01]

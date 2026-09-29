@@ -1,0 +1,66 @@
+= Absence Pressure 01
+:pattern-id: EX-140-010
+:family: Weightless grime study
+:region: United Kingdom / experimental dialogue
+:era: Contemporary study
+:meter: 4/4
+:subdivision: 1/16
+:bars: 2
+:tempo: 138–142 BPM
+:source-type: Original
+:confidence: High
+:source-refs: src-weightless, src-mumdance-archive, src-plastician
+:tags: weightless, grime-informed, negative-space, sparse, half-time, two-bar, original-study
+
+[cols="1,3"]
+|===
+|Pattern ID |{pattern-id}
+|Family |{family}
+|Region |{region}
+|Era |{era}
+|Tempo |{tempo}
+|Meter / grid |{meter}, {subdivision}, {bars} bars
+|Tags |{tags}
+|===
+
+== Pattern
+
+[drum-pattern]
+----
+KICK   | X--- ---- ---- ---x | ---- ---- -x-- ----
+SNARE  | ---- X--- ---- ---- | ---- ---- ---- X---
+HAT    | ---- --x- ---- ---- | -x-- ---- ---- --x-
+METAL  | ---- ---- ---o ---- | ---- --o- ---- ----
+PERC   | --g- ---- ---- x--- | ---- ---- x--g ----
+----
+
+== Character
+
+The loop gives each major attack a wide, exposed field. A single kick begins the
+first bar, but the expected second snare is withheld until the end of bar two;
+metallic tails and near-silent ghost notes make the gap feel intentional rather
+than unfinished.
+
+== Design device
+
+Withholding:: The usual half-time return is delayed by one and a half bars.
+Tail:: Metal events occupy duration rather than rhythmic density, allowing their decay to become part of the phrase.
+Pressure:: The few low-drum attacks are isolated enough to invite a bass response without requiring one.
+
+== Performance notes
+
+* Let the metal sound ring into empty cells, but filter its low end so it does not mask the kick.
+* Keep ghost percussion barely above the noise floor; it should be felt before it is identified.
+* A sustained sub note can enter after the first kick, then cut before the bar-two snare arrives.
+
+== Provenance
+
+Type:: {source-type}
+Source:: Original educational study using absence, isolated impacts, and decaying timbres as weightless-grime design constraints. It does not transcribe or imitate a particular artist or recording.
+References:: The xref:research:sources.adoc#src-weightless[Logos and Mumdance interview] and xref:research:sources.adoc#src-mumdance-archive[Mumdance archive] provide weightless context; xref:research:sources.adoc#src-plastician[Plastician] provides grime context.
+Confidence:: {confidence}
+
+== Related patterns
+
+* xref:experimental/negative-space-relay-01.adoc[Negative-Space Relay 01]
+* xref:experimental/weightless-batida/vacuum-batida-01.adoc[Vacuum Batida 01]

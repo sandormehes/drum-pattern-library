@@ -52,6 +52,15 @@ Patterns are grouped by musical family and region for browsing, while stable IDs
 * xref:experimental/footwork-polyrhythm-01.adoc[Footwork Polyrhythm 01] — a fast kick-and-tom cross-rhythm held against stable snare landmarks.
 * xref:experimental/footwork-rotor-01.adoc[Footwork Rotor 01] — an angular, rotating-percussion framework with sparse kick answers.
 
+=== Weightless grime studies
+
+Three original studies in darker weightless-grime negative space: delayed impacts,
+missing downbeats, and decaying events that carry the phrase through silence.
+
+* xref:experimental/weightless-grime/absence-pressure-01.adoc[Absence Pressure 01] — delayed backbeat impact suspended between isolated kick and metal events.
+* xref:experimental/weightless-grime/void-clap-01.adoc[Void Clap 01] — a downbeat-free frame where a lone clap reframes the second bar.
+* xref:experimental/weightless-grime/receding-impact-01.adoc[Receding Impact 01] — a groove that erases its own foundation before the restart.
+
 === Weightless × Batida series
 
 This focused xref:experimental/weightless-batida/index.adoc[six-pattern series] puts sparse, tension-heavy grime architecture in dialogue with percussion-led Lisbon batida. All entries are original studies, not transcriptions.
